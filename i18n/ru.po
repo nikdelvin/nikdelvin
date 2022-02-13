@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 3; plural = (n % 10 == 1 && n % 100 != 11 ? 0 : n "
+"% 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);\n"
+"Language: ru\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pages/Main.jsx:67
+msgid "Hello there"
+msgstr "Привет"
+
+#: src/pages/Main.jsx:70
+msgid ""
+"Welcome to the sandbox for learning React, JavaScript, HTML and CSS. You "
+"will learn how to create web applications on a real example of the "
+"development of this site and small pet projects presented on it."
+msgstr ""
+"Добро пожаловать в песочницу для изучения React, JavaScript, HTML и CSS. Вы "
+"научитесь создавать веб-приложения на реальном примере разработки этого "
+"сайта и представленных на нем небольших домашних проектов."
+
+#: src/pages/Main.jsx:73
+msgid "Get Started"
+msgstr "Начать"
+
+#: src/pages/OilMap.jsx:52
+msgid "№1"
+msgstr "№1"
+
+#: src/pages/OilMap.jsx:58
+msgid "Select the oil tower"
+msgstr "Выберите нефтяную вышку"
+
+#: src/pages/OilMap.jsx:64
+msgid "Oil tower №1"
+msgstr "Нефтяная вышка №1"
+
+#: src/pages/OilMap.jsx:65
+msgid "Hide tower"
+msgstr "Скрыть вышку"
+
+#: src/pages/OilMap.jsx:67
+msgid "Choose stats"
+msgstr "Выберите статистику"
+
+#: src/pages/OilMap.jsx:68
+msgid "Correlation analysis"
+msgstr "Корреляционный анализ"
+
+#: src/pages/OilMap.jsx:69
+msgid "Сluster analysis (factors)"
+msgstr "Кластерный анализ (факторы)"
+
+#: src/pages/OilMap.jsx:70
+msgid "Сluster analysis (Y's)"
+msgstr "Кластерный анализ (игрики)"
+
+#: src/pages/OilMap.jsx:71
+msgid "Linear Regression for Y1 (all clusters)"
+msgstr "Линейная регрессия для Y1 (все кластеры)"
+
+#: src/pages/OilMap.jsx:72
+msgid "Linear Regression for Y2 (all clusters)"
+msgstr "Линейная регрессия для Y2 (все кластеры)"
+
+#: src/pages/OilMap.jsx:73
+msgid "Linear Regression for Y3 (all clusters)"
+msgstr "Линейная регрессия для Y3 (все кластеры)"
+
+#: src/pages/OilMap.jsx:74
+msgid "Linear Regression for Y1 (CL2)"
+msgstr "Линейная регрессия для Y1 (CL2)"
+
+#: src/pages/OilMap.jsx:75
+msgid "Linear Regression for Y2 (CL2)"
+msgstr "Линейная регрессия для Y2 (CL2)"
+
+#: src/pages/OilMap.jsx:76
+msgid "Linear Regression for Y3 (CL2)"
+msgstr "Линейная регрессия для Y3 (CL2)"
+
+#: src/pages/OilMap.jsx:77
+msgid "Accuracy table for Y1 (SFS, SBS, CA)"
+msgstr "Таблица точности для Y1 (SFS, SBS, КA)"
+
+#: src/pages/OilMap.jsx:78
+msgid "Accuracy table for Y2 (SFS, SBS, CA)"
+msgstr "Таблица точности для Y2 (SFS, SBS, КA)"
+
+#: src/pages/OilMap.jsx:79
+msgid "Accuracy table for Y3 (SFS, SBS, CA)"
+msgstr "Таблица точности для Y3 (SFS, SBS, КA)"
+
+#: src/pages/OilMap.jsx:82
+msgid "Loading"
+msgstr "Загрузка"
+
+#: src/pages/OilMap.jsx:95
+#: src/pages/OilMap.jsx:106
+#: src/pages/OilMap.jsx:117
+#: src/pages/OilMap.jsx:129
+#: src/pages/OilMap.jsx:140
+#: src/pages/OilMap.jsx:151
+msgid "Linear regression equation: "
+msgstr "Уравнение линейной регрессии: "
+
+#: src/pages/OilMap.jsx:96
+#: src/pages/OilMap.jsx:107
+#: src/pages/OilMap.jsx:118
+#: src/pages/OilMap.jsx:130
+#: src/pages/OilMap.jsx:141
+#: src/pages/OilMap.jsx:152
+msgid "Linear regression accuracy in R^2 format for training set: "
+msgstr "Точность линейной регрессии в формате R^2 для обучающей выборки: "
+
+#: src/pages/OilMap.jsx:97
+#: src/pages/OilMap.jsx:108
+#: src/pages/OilMap.jsx:119
+#: src/pages/OilMap.jsx:131
+#: src/pages/OilMap.jsx:142
+#: src/pages/OilMap.jsx:153
+msgid "Linear regression accuracy in R^2 format for the test set: "
+msgstr "Точность линейной регрессии в формате R^2 для тестового набора: "
+
+#: src/pages/OilMap.jsx:98
+#: src/pages/OilMap.jsx:109
+#: src/pages/OilMap.jsx:121
+#: src/pages/OilMap.jsx:132
+#: src/pages/OilMap.jsx:143
+#: src/pages/OilMap.jsx:155
+msgid "Standard error to mean: "
+msgstr "Стандартная ошибка к среднему: "
+
+#: src/pages/OilMap.jsx:99
+#: src/pages/OilMap.jsx:110
+#: src/pages/OilMap.jsx:122
+#: src/pages/OilMap.jsx:133
+#: src/pages/OilMap.jsx:144
+#: src/pages/OilMap.jsx:156
+msgid "Determination coefficient: "
+msgstr "Коэффицент детерминации: "
+
+#: src/pages/OilMap.jsx:100
+#: src/pages/OilMap.jsx:111
+#: src/pages/OilMap.jsx:123
+#: src/pages/OilMap.jsx:134
+#: src/pages/OilMap.jsx:145
+#: src/pages/OilMap.jsx:157
+msgid "Fisher's criterion: "
+msgstr "Критерий Фишера: "
+
+#: src/pages/OilMap.jsx:120
+#: src/pages/OilMap.jsx:154
+msgid "Linear regression accuracy in R^2 format: "
+msgstr "Точность линейной регрессии в формате R^2: "
+
+#: src/App.js:51
+msgid "Projects"
+msgstr "Проекты"
+
+#: src/App.js:56
+msgid "Main Page"
+msgstr "Главная страница"
+
+#: src/App.js:61
+msgid "Oil Map"
+msgstr "Карта нефтяных вышек"
+
+#: src/App.js:66
+msgid "Languages"
+msgstr "Языки"
+
+#: src/App.js:81
+msgid "Themes"
+msgstr "Темы"
+
+#: src/App.js:86
+msgid "Light"
+msgstr "Светлая"
+
+#: src/App.js:91
+msgid "Dark"
+msgstr "Темная"
