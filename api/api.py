@@ -10,6 +10,89 @@ import seaborn as sns
 import io
 import base64
 
+def initilization_of_population(size, n_feat):
+    population = []
+    for i in range(size):
+        chromosome = np.ones(n_feat, dtype=np.bool)
+        chromosome[:int(0.3*n_feat)] = False
+        np.random.shuffle(chromosome)
+        population.append(chromosome)
+    return population
+
+def fitness_score(population, X_train, X_test, y_train, y_test, logmodel):
+    from sklearn.metrics import r2_score
+    scores = []
+    for chromosome in population:
+        logmodel.fit(X_train.iloc[:,chromosome],y_train)
+        scores.append(logmodel.score(X_test.iloc[:,chromosome],y_test))
+    scores, population = np.array(scores), np.array(population)
+    inds = np.argsort(scores)
+    return list(scores[inds][::-1]), list(population[inds,:][::-1])
+
+def fitness_score_y3(population, X_train, X_test, y_train, y_test, logmodel):
+    from sklearn.metrics import r2_score
+    scores = []
+    for chromosome in population:
+        logmodel.fit(X_train.iloc[:, chromosome], y_train)
+        predictions = logmodel.predict(X_test.iloc[:, chromosome])
+        scores.append(r2_score(y_test, predictions))
+    scores, population = np.array(scores), np.array(population)
+    inds = np.argsort(scores)
+    return list(scores[inds][::-1]), list(population[inds, :][::-1])
+
+def selection(pop_after_fit, n_parents):
+    population_nextgen = []
+    for i in range(n_parents):
+        population_nextgen.append(pop_after_fit[i])
+    return population_nextgen
+
+def crossover(pop_after_sel):
+    population_nextgen = pop_after_sel
+    for i in range(len(pop_after_sel)):
+        child = pop_after_sel[i].copy()
+        child[3:7] = pop_after_sel[(i+1) % len(pop_after_sel)][3:7]
+        population_nextgen.append(child)
+    return population_nextgen
+
+def mutation(pop_after_cross, mutation_rate):
+    import random
+    population_nextgen = []
+    for i in range(1, len(pop_after_cross)):
+        chromosome = pop_after_cross[i]
+        for j in range(len(chromosome)):
+            if random.random() < mutation_rate:
+                chromosome[j] = not chromosome[j]
+        population_nextgen.append(chromosome)
+    return population_nextgen
+
+def generations(size, n_feat, n_parents, mutation_rate, n_gen, X_train, X_test, y_train, y_test, logmodel):
+    best_chromo = []
+    best_score = []
+    population_nextgen = initilization_of_population(size, n_feat)
+    for i in range(n_gen):
+        scores, pop_after_fit = fitness_score(population_nextgen, X_train, X_test, y_train, y_test, logmodel)
+        print(scores[:2])
+        pop_after_sel = selection(pop_after_fit, n_parents)
+        pop_after_cross = crossover(pop_after_sel)
+        population_nextgen = mutation(pop_after_cross, mutation_rate)
+        best_chromo.append(pop_after_fit[0])
+        best_score.append(scores[0])
+    return best_chromo, best_score
+
+def generations_y3(size, n_feat, n_parents, mutation_rate, n_gen, X_train, X_test, y_train, y_test, logmodel):
+    best_chromo = []
+    best_score = []
+    population_nextgen = initilization_of_population(size, n_feat)
+    for i in range(n_gen):
+        scores, pop_after_fit = fitness_score_y3(population_nextgen, X_train, X_test, y_train, y_test, logmodel)
+        print(scores[:2])
+        pop_after_sel = selection(pop_after_fit, n_parents)
+        pop_after_cross = crossover(pop_after_sel)
+        population_nextgen = mutation(pop_after_cross, mutation_rate)
+        best_chromo.append(pop_after_fit[0])
+        best_score.append(scores[0])
+    return best_chromo, best_score
+
 def Api(request):
     if request.path == "/api/ping/":
         try:
@@ -751,6 +834,255 @@ def Api(request):
                                  "det_coff": det_coff,
                                  "fisher": fisher,
                                  "data": my_base64_jpgData})
+        except Exception as e:
+            return JsonResponse({"success": False, "error": str(e) + "\nTraceback:\n" + str(traceback.format_exc())})
+    if request.path == "/api/genetic/y1/":
+        try:
+            import random
+            from sklearn.preprocessing import StandardScaler
+            from sklearn.datasets import load_breast_cancer
+            from sklearn.model_selection import train_test_split
+            from sklearn.linear_model import LogisticRegression
+            from sklearn.metrics import accuracy_score
+            from sklearn.metrics import r2_score
+            data = pd.read_csv('./Data/data_set_400.csv')
+            data = data.sample(frac=1)
+            data1 = data.replace(',', '.', regex=True)
+            data.iloc[:, 8:12] = data1.iloc[:, 8:12].astype(float)
+            data.iloc[:, 14:16] = data1.iloc[:, 14:16].astype(float)
+            data.iloc[:, 18:24] = data1.iloc[:, 18:24].astype(float)
+            y = np.array(data.iloc[:, 1]).reshape(-1, 1)
+            x = data.iloc[:, 4:]
+            x = StandardScaler().fit_transform(x)
+            X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.30, random_state=101)
+            logmodel = LogisticRegression()
+            X_train = pd.DataFrame(X_train)
+            X_test = pd.DataFrame(X_test)
+            chromo, score = generations(size=50, n_feat=20, n_parents=25, mutation_rate=0.10,
+                                        n_gen=15, X_train=X_train, X_test=X_test, y_train=y_train, y_test=y_test,
+                                        logmodel=logmodel)
+            logmodel.fit(X_train.iloc[:, chromo[-1]], y_train)
+            y_string = "y = 0"
+            for i in range(np.shape(logmodel.coef_[0])[0]):
+                y_string += str(round(logmodel.coef_[0][i], 4)) + "*x" + str(i) + " + "
+            y_string += str(round(logmodel.intercept_[0], 4))
+            gen_y1_factors = chromo[-1]
+            gen_y1_score_train = logmodel.score(X_train.iloc[:, chromo[-1]], y_train)
+            gen_y1_score_test = logmodel.score(X_test.iloc[:, chromo[-1]], y_test)
+            lr = logmodel
+            Y_train = y_train.reshape(-1, )
+            Y_test = y_test.reshape(-1, )
+            x_train = X_train.iloc[:, chromo[-1]]
+            x_test = X_test.iloc[:, chromo[-1]]
+            f, axes = plt.subplots(2, 2, figsize=(20, 10))
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), lr.predict(x_train), color='red')
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), Y_train)
+            axes[0, 0].set_title('Train set(Y1)', fontsize=20)
+            axes[0, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].scatter(range(len(Y_train)), lr.predict(x_train) - Y_train, color='red')
+            axes[1, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].set_xlabel('num', fontsize=20)
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), lr.predict(x_test), color='red')
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), Y_test)
+            axes[0, 1].set_title('Test set(Y1)', fontsize=20)
+            axes[0, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].scatter(range(len(Y_test)), lr.predict(x_test) - Y_test, color='red')
+            axes[1, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].set_xlabel('num', fontsize=20)
+            axes[0, 0].set_ylim(-21, 21)
+            axes[1, 0].set_ylim(-21, 21)
+            axes[0, 1].set_ylim(-21, 21)
+            axes[1, 1].set_ylim(-21, 21)
+            std = str((lr.predict(x_test) - y_test).std() / pow(len(y_test), 0.5))
+            det_coff = str(r2_score(y_test, lr.predict(x_test)))
+            R2 = r2_score(y_train, lr.predict(x_train))
+            n = len(y_train)
+            m = np.shape(x_train)[1]
+            fisher = str((R2 / (1 - R2)) * (n - m - 1) / (m))
+            my_stringIObytes = io.BytesIO()
+            plt.savefig(my_stringIObytes, format='png')
+            my_stringIObytes.seek(0)
+            my_base64_jpgData = base64.b64encode(my_stringIObytes.read()).decode('ascii')
+            return JsonResponse({"success": True,
+                                 "y_string": y_string,
+                                 "acc_train": str(gen_y1_score_train),
+                                 "acc_test": str(gen_y1_score_test),
+                                 "factors": np.where(gen_y1_factors)[0].tolist(),
+                                 "std": std,
+                                 "det_coff": det_coff,
+                                 "fisher": fisher,
+                                 "data": my_base64_jpgData})
+        except Exception as e:
+            return JsonResponse({"success": False, "error": str(e) + "\nTraceback:\n" + str(traceback.format_exc())})
+    if request.path == "/api/genetic/y2/":
+        try:
+            import random
+            from sklearn.preprocessing import StandardScaler
+            from sklearn.datasets import load_breast_cancer
+            from sklearn.model_selection import train_test_split
+            from sklearn.linear_model import LogisticRegression
+            from sklearn.metrics import accuracy_score
+            from sklearn.metrics import r2_score
+            data = pd.read_csv('./Data/data_set_400.csv')
+            data = data.sample(frac=1)
+            data1 = data.replace(',', '.', regex=True)
+            data.iloc[:, 8:12] = data1.iloc[:, 8:12].astype(float)
+            data.iloc[:, 14:16] = data1.iloc[:, 14:16].astype(float)
+            data.iloc[:, 18:24] = data1.iloc[:, 18:24].astype(float)
+            y = np.array(data.iloc[:, 2]).reshape(-1, 1)
+            x = data.iloc[:, 4:]
+            x = StandardScaler().fit_transform(x)
+            X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.30, random_state=101)
+            logmodel = LogisticRegression()
+            X_train = pd.DataFrame(X_train)
+            X_test = pd.DataFrame(X_test)
+            chromo, score = generations(size=50, n_feat=20, n_parents=25, mutation_rate=0.10,
+                                           n_gen=15, X_train=X_train, X_test=X_test, y_train=y_train, y_test=y_test,
+                                           logmodel=logmodel)
+            logmodel.fit(X_train.iloc[:, chromo[-1]], y_train)
+            y_string = "y = 0"
+            for i in range(np.shape(logmodel.coef_[0])[0]):
+                y_string += str(round(logmodel.coef_[0][i], 4)) + "*x" + str(i) + " + "
+            y_string += str(round(logmodel.intercept_[0], 4))
+            gen_y2_factors = chromo[-1]
+            gen_y2_score_train = logmodel.score(X_train.iloc[:, chromo[-1]], y_train)
+            gen_y2_score_test = logmodel.score(X_test.iloc[:, chromo[-1]], y_test)
+            lr = logmodel
+            Y_train = y_train.reshape(-1, )
+            Y_test = y_test.reshape(-1, )
+            x_train = X_train.iloc[:, chromo[-1]]
+            x_test = X_test.iloc[:, chromo[-1]]
+            f, axes = plt.subplots(2, 2, figsize=(20, 10))
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), lr.predict(x_train), color='red')
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), Y_train)
+            axes[0, 0].set_title('Train set(Y2)', fontsize=20)
+            axes[0, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].scatter(range(len(Y_train)), lr.predict(x_train) - Y_train, color='red')
+            axes[1, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].set_xlabel('num', fontsize=20)
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), lr.predict(x_test), color='red')
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), Y_test)
+            axes[0, 1].set_title('Test set(Y2)', fontsize=20)
+            axes[0, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].scatter(range(len(Y_test)), lr.predict(x_test) - Y_test, color='red')
+            axes[1, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].set_xlabel('num', fontsize=20)
+            axes[0, 0].set_ylim(-5, 5)
+            axes[1, 0].set_ylim(-5, 5)
+            axes[0, 1].set_ylim(-5, 5)
+            axes[1, 1].set_ylim(-5, 5)
+            std = str((lr.predict(x_test) - y_test).std() / pow(len(y_test), 0.5))
+            det_coff = str(r2_score(y_test, lr.predict(x_test)))
+            R2 = r2_score(y_train, lr.predict(x_train))
+            n = len(y_train)
+            m = np.shape(x_train)[1]
+            fisher = str((R2 / (1 - R2)) * (n - m - 1) / (m))
+            my_stringIObytes = io.BytesIO()
+            plt.savefig(my_stringIObytes, format='png')
+            my_stringIObytes.seek(0)
+            my_base64_jpgData = base64.b64encode(my_stringIObytes.read()).decode('ascii')
+            return JsonResponse({"success": True,
+                                 "y_string": y_string,
+                                 "acc_train": str(gen_y2_score_train),
+                                 "acc_test": str(gen_y2_score_test),
+                                 "factors": np.where(gen_y2_factors)[0].tolist(),
+                                 "std": std,
+                                 "det_coff": det_coff,
+                                 "fisher": fisher,
+                                 "data": my_base64_jpgData})
+        except Exception as e:
+            return JsonResponse({"success": False, "error": str(e) + "\nTraceback:\n" + str(traceback.format_exc())})
+    if request.path == "/api/genetic/y3/":
+        try:
+            import random
+            from sklearn.preprocessing import StandardScaler
+            from sklearn.datasets import load_breast_cancer
+            from sklearn.model_selection import train_test_split
+            from sklearn.linear_model import LogisticRegression
+            from sklearn.metrics import accuracy_score
+            from sklearn.metrics import r2_score
+            data = pd.read_csv('./Data/data_set_400.csv')
+            data = data.sample(frac=1)
+            data1 = data.replace(',', '.', regex=True)
+            data.iloc[:, 8:12] = data1.iloc[:, 8:12].astype(float)
+            data.iloc[:, 14:16] = data1.iloc[:, 14:16].astype(float)
+            data.iloc[:, 18:24] = data1.iloc[:, 18:24].astype(float)
+            y = data.iloc[:, 3]
+            x = data.iloc[:, 4:]
+            x = StandardScaler().fit_transform(x)
+            X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.30, random_state=101)
+            logmodel = LogisticRegression()
+            X_train = pd.DataFrame(X_train)
+            X_test = pd.DataFrame(X_test)
+            chromo, score = generations_y3(size=50, n_feat=20, n_parents=25, mutation_rate=0.10,
+                                        n_gen=15, X_train=X_train, X_test=X_test, y_train=y_train, y_test=y_test, logmodel=logmodel)
+            logmodel.fit(X_train.iloc[:, chromo[-1]], y_train)
+            y_string = "y = 0"
+            for i in range(np.shape(logmodel.coef_[0])[0]):
+                y_string += str(round(logmodel.coef_[0][i], 4)) + "*x" + str(i) + " + "
+            y_string += str(round(logmodel.intercept_[0], 4))
+            gen_y3_score_train = r2_score(y_train, logmodel.predict(X_train.iloc[:, chromo[-1]]))
+            gen_y3_score_test = r2_score(y_test, logmodel.predict(X_test.iloc[:, chromo[-1]]))
+            gen_y3_factors = chromo[-1]
+            lr = logmodel
+            Y_train = y_train
+            Y_test = y_test
+            x_train = X_train.iloc[:, chromo[-1]]
+            x_test = X_test.iloc[:, chromo[-1]]
+            f, axes = plt.subplots(2, 2, figsize=(20, 10))
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), lr.predict(x_train), color='red')
+            axes[0, 0].scatter(range(len(lr.predict(x_train))), Y_train)
+            axes[0, 0].set_title('Train set(Y3)', fontsize=20)
+            axes[0, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].scatter(range(len(Y_train)), lr.predict(x_train) - Y_train, color='red')
+            axes[1, 0].set_ylabel('Y', fontsize=20)
+            axes[1, 0].set_xlabel('num', fontsize=20)
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), lr.predict(x_test), color='red')
+            axes[0, 1].scatter(range(len(lr.predict(x_test))), Y_test)
+            axes[0, 1].set_title('Test set(Y3)', fontsize=20)
+            axes[0, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].scatter(range(len(Y_test)), lr.predict(x_test) - Y_test, color='red')
+            axes[1, 1].set_ylabel('Y', fontsize=20)
+            axes[1, 1].set_xlabel('num', fontsize=20)
+            axes[0, 0].set_ylim(-40000, 150000)
+            axes[1, 0].set_ylim(-40000, 150000)
+            axes[0, 1].set_ylim(-40000, 150000)
+            axes[1, 1].set_ylim(-40000, 150000)
+            std = str((lr.predict(x_test)-y_test).std() / pow(len(y_test), 0.5))
+            det_coff = str(r2_score(y_test, lr.predict(x_test)))
+            R2 = r2_score(y_train, lr.predict(x_train))
+            n = len(y_train)
+            m = np.shape(x_train)[1]
+            fisher = str((R2 / (1 - R2)) * (n - m - 1) / (m))
+            my_stringIObytes = io.BytesIO()
+            plt.savefig(my_stringIObytes, format='png')
+            my_stringIObytes.seek(0)
+            my_base64_jpgData = base64.b64encode(my_stringIObytes.read()).decode('ascii')
+            return JsonResponse({"success": True,
+                                 "y_string": y_string,
+                                 "acc_train": str(gen_y3_score_train),
+                                 "acc_test": str(gen_y3_score_test),
+                                 "factors": np.where(gen_y3_factors)[0].tolist(),
+                                 "std": std,
+                                 "det_coff": det_coff,
+                                 "fisher": fisher,
+                                 "data": my_base64_jpgData})
+        except Exception as e:
+            return JsonResponse({"success": False, "error": str(e) + "\nTraceback:\n" + str(traceback.format_exc())})
+    if request.path == "/api/map/":
+        try:
+            import random
+            data = pd.read_csv('./Data/data_set_400.csv')
+            data = data.sample(frac=1)
+            data1 = data.replace(',', '.', regex=True)
+            data.iloc[:, 8:12] = data1.iloc[:, 8:12].astype(float)
+            data.iloc[:, 14:16] = data1.iloc[:, 14:16].astype(float)
+            data.iloc[:, 18:24] = data1.iloc[:, 18:24].astype(float)
+            df_json = json.loads(data.to_json(orient="records"))
+            for el in df_json:
+                el["lat"] = random.uniform(54.855783, 55.787899)
+                el["lng"] = random.uniform(49.123753, 53.076838)
+            return JsonResponse({"success": True, "data": df_json})
         except Exception as e:
             return JsonResponse({"success": False, "error": str(e) + "\nTraceback:\n" + str(traceback.format_exc())})
     else:
