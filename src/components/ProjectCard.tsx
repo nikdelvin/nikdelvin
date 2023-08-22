@@ -19,7 +19,7 @@ const ProjectCard: FC<Props> = ({ title, images, projectID }) => {
                     style={{
                         backgroundImage: `url('${images[0]}')`
                     }}></div>
-                <div className="overlay-layer card-rounded bg-dark bg-opacity-25 d-flex flex-column">
+                <div className="overlay-layer opacity-100 card-rounded bg-dark bg-opacity-25 d-flex flex-column">
                     <i className="ki-duotone ki-eye fs-3x text-white">
                         <span className="path1"></span>
                         <span className="path2"></span>
