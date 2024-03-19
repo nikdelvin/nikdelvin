@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro'
+import tailyUI from 'taily-ui'
+---
+
+<Layout
+    title="Hi, Nik Delvin here!"
+    description="6-years experienced, 3-startups launched Full-stack Web Developer, Android/IOS Developer, DevOps."
+>
+    <main class="select-none overflow-hidden">
+        <fragment
+            set:html={tailyUI.OpenSourcePromo({
+                logo: '/favicon.svg',
+                title: 'Nik Delvin',
+                color: 'default',
+                text: [
+                    { type: 'default', value: 'Launch' },
+                    { type: 'primary', value: 'beautiful' },
+                    {
+                        type: 'default',
+                        value: `ideas directly to your customers' PC or phone devices with help of`
+                    },
+                    { type: 'secondary', value: 'all-in-one developer' }
+                ],
+                description:
+                    '6-years experienced, 3-startups launched Full-stack Web Developer, Android/IOS Developer, DevOps.',
+                button: {
+                    title: 'To my projects',
+                    link: '/'
+                },
+                github: 'https://github.com/nikdelvin'
+            })}
+        />
+    </main>
+</Layout>
