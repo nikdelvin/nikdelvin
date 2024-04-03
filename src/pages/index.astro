@@ -26,9 +26,26 @@ import tailyUI from 'taily-ui'
                     '6-years experienced, 3-startups launched Full-stack Web Developer, Android/IOS Developer, DevOps.',
                 button: {
                     title: 'To my projects',
-                    link: '/'
+                    link: '#kpi'
                 },
                 github: 'https://github.com/nikdelvin'
+            })}
+        />
+        <fragment
+            id="kpi"
+            set:html={tailyUI.KPICards({
+                title: 'I can offer you',
+                color: 'default',
+                cards: [
+                    { title: '6', description1: 'years of', description2: 'experience' },
+                    { title: '3', description1: 'launched', description2: 'projects' },
+                    { title: '6', description1: 'open source', description2: 'projects' },
+                    { title: '3', description1: 'scientific', description2: 'articles' }
+                ],
+                button: {
+                    title: 'Hire me today',
+                    link: '/'
+                }
             })}
         />
     </main>
