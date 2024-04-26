@@ -44,6 +44,102 @@ import tailyUI from 'taily-ui'
                 ],
                 button: {
                     title: 'Hire me today',
+                    link: '#features'
+                }
+            })}
+        />
+        <fragment
+            id="features"
+            set:html={tailyUI.FeatureCards({
+                title: "I've learned a lot",
+                color: 'default',
+                reverse: false,
+                featureTitle: 'My journey',
+                featureDescription: [
+                    { type: 'default', value: 'Starts with' },
+                    { type: 'primary', value: 'idea' },
+                    { type: 'default', value: 'to create a' },
+                    { type: 'primary', value: 'site builder' }
+                ],
+                featureOptions: [
+                    "I've created Brodly - a stylish, modern, high-secure, and fully anonymous live-streaming platform",
+                    "I've created TailyUI - an open-source Components & Site Layouts UI library 100% built and animated with pure Tailwind CSS which I support to this day",
+                    "I've created Neuroly - an AI chatbot based on 56B tokens LLM, with voice recognition and synthesis"
+                ],
+                button: {
+                    title: 'Learn more',
+                    link: '/'
+                }
+            })}
+        />
+        <fragment
+            id="features"
+            set:html={tailyUI.FeatureCards({
+                title: 'I made a deep dive into',
+                color: 'default',
+                reverse: true,
+                featureTitle: 'Web Dev',
+                featureDescription: [
+                    { type: 'default', value: 'From' },
+                    { type: 'secondary', value: 'zero' },
+                    { type: 'default', value: 'to releasing ready-to-market' },
+                    { type: 'secondary', value: 'apps' }
+                ],
+                featureOptions: [
+                    "I've developed an affiliation checking system between companies for B2B analytics in 10 months",
+                    "I've released a mobile application for real estate brokers in Dubai and an internal ERP system for property management within 2 years",
+                    "I've launched a messenger application for Bitrix24 CRM integration with WhatsApp in 8 months"
+                ],
+                button: {
+                    title: 'Learn more',
+                    link: '/'
+                }
+            })}
+        />
+        <fragment
+            id="features"
+            set:html={tailyUI.FeatureCards({
+                title: "And I'm still learning",
+                color: 'default',
+                reverse: false,
+                featureTitle: 'How to help',
+                featureDescription: [
+                    { type: 'default', value: 'people' },
+                    { type: 'primary', value: 'reach' },
+                    { type: 'default', value: 'their goals with minimum' },
+                    { type: 'primary', value: 'effort' }
+                ],
+                featureOptions: [
+                    "I working on Feelicy - a mind mapping and goal planning platform in the format of Garden Simulator",
+                    "I working on Scripty - a practice-oriented educational platform for everyone who wants to learn JS, cross-platform development & DevOps",
+                    "I working on Scientry - all-in-one data management & visualization solution for scientific researches"
+                ],
+                button: {
+                    title: 'Learn more',
+                    link: '/'
+                }
+            })}
+        />
+        <fragment
+            id="features"
+            set:html={tailyUI.FeatureCards({
+                title: "Also with power",
+                color: 'default',
+                reverse: true,
+                featureTitle: 'Of science',
+                featureDescription: [
+                    { type: 'default', value: 'I can' },
+                    { type: 'secondary', value: 'prove' },
+                    { type: 'default', value: 'that almost nothing is' },
+                    { type: 'secondary', value: 'impossible' }
+                ],
+                featureOptions: [
+                    "I wrote an article about applying modified genetic algorithm in solving the problem of 3d packaging",
+                    "I wrote an article about development of an information system for organizing the work of a production workshop with using of computer vision",
+                    "I wrote an article about multi-physics modelling framework development for materials processing"
+                ],
+                button: {
+                    title: 'Learn more',
                     link: '/'
                 }
             })}
