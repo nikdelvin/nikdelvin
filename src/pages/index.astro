@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import tailyUI from 'taily-ui'
+
+/*
+
+*/
 ---
 
 <Layout
@@ -144,5 +148,199 @@ import tailyUI from 'taily-ui'
                 }
             })}
         />
+        <fragment
+            id="projects"
+            set:html={tailyUI.Projects({
+                title: 'My latest works',
+                color: 'default',
+                projects: Array(5)
+                    .fill(true)
+                    .map(() => ({
+                        title: 'Of science',
+                        description: [
+                            { type: 'default', value: 'I can' },
+                            { type: 'primary', value: 'prove' },
+                            { type: 'default', value: 'that nothing is' },
+                            { type: 'primary', value: 'impossible' }
+                        ],
+                        options: [
+                            'I wrote an article about applying a modified genetic algorithm to solve the problem of',
+                            'I wrote an article about development of an information system for organizing the work of a production workshop with using of computer',
+                            'I wrote an article about multi-physics modeling framework development for materials'
+                        ],
+                        image: `https://picsum.photos/seed/${Math.random()}/1920/1080`
+                    }))
+            })}
+        />
+        <fragment
+            id="skills"
+            set:html={tailyUI.Skills({
+                title: 'My skills & inspiration',
+                color: 'default',
+                skills: [
+                    { title: 'JS', icon: '/javascript.svg' },
+                    { title: 'HTML5', icon: '/html-5.svg' },
+                    { title: 'CSS3', icon: '/css-3.svg' },
+                    { title: 'Python', icon: '/python.svg' },
+                    { title: 'Rust', icon: '/rust.svg' },
+                    { title: 'Astro JS', icon: '/astro-js.svg' },
+                    { title: 'Next JS', icon: '/next-js.svg' },
+                    { title: 'React', icon: '/react.svg' },
+                    { title: 'Three JS', icon: '/three-js.svg' },
+                    { title: 'Figma', icon: '/figma.svg' },
+                    { title: 'Node JS', icon: '/node-js.svg' },
+                    { title: 'Express', icon: '/express-js.svg' },
+                    { title: 'My SQL', icon: '/my-sql.svg' },
+                    { title: 'Git', icon: '/git.svg' },
+                    { title: 'Docker', icon: '/docker.svg' },
+                    { title: 'Tailwind CSS', icon: '/tailwind-css.svg' },
+                    { title: 'Bootsrap', icon: '/bootstrap.svg' },
+                    { title: 'Sass', icon: '/sass.svg' },
+                    { title: 'Android Studio', icon: '/android-studio.svg' },
+                    { title: 'Swift', icon: '/swift.svg' },
+                    { title: 'Django', icon: '/django.svg' },
+                    { title: 'Flask', icon: '/flask.svg' },
+                    { title: 'Cloud Platform', icon: '/google-cloud-platform.svg' },
+                    { title: 'Compute Engine', icon: '/google-compute-engine.svg' },
+                    { title: 'MATLAB', icon: '/matlab.svg' }
+                ],
+                music: [
+                    'https://open.spotify.com/embed/track/5TL04XPWpL2rTK7HLBWK6N',
+                    'https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW',
+                    'https://open.spotify.com/embed/track/43aktSsHN3Pgu0dzw3BS5W',
+                    'https://open.spotify.com/embed/track/7Iiek3SL6PluRxj9IgbTC1',
+                    'https://open.spotify.com/embed/track/7sA2SKTo1QbTSSYn5YvJC4'
+                ]
+            })}
+        />
+        <div class="flex h-full w-screen flex-col">
+            <div class="flex h-full flex-col items-center bg-gradient-to-r from-zinc-400/15 via-zinc-950 to-violet-200/15 text-zinc-50">
+                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">
+                        <h1 class="bg-gradient-to-r from-zinc-400 to-violet-200 bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
+                            My experience
+                        </h1>
+                    </div>
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                        <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2 w-full">
+                            <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
+                                <div
+                                    data-shadow
+                                    data-color="default"
+                                    class="card aspect-square !rotate-[10deg] !scale-[0.88]"
+                                >
+                                    <h2 class="absolute left-[16px] top-[12px] text-2xl font-semibold bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">
+                                        From
+                                    </h2>
+                                    <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                        23
+                                    </h1>
+                                    <h2 class="pb-3 text-center text-4xl font-bold">
+                                        January
+                                    </h2>
+                                    <h2 class="pb-3 text-center text-4xl font-bold">
+                                        <span class="inline bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">2024</span>
+                                    </h2>
+                                </div>
+                                <div
+                                    data-shadow
+                                    data-color="default"
+                                    class="card aspect-square !rotate-[-10deg] !scale-[0.8] ml-3"
+                                >
+                                    <h2 class="absolute left-[16px] top-[12px] text-2xl font-semibold bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">
+                                        To
+                                    </h2>
+                                    <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                        23
+                                    </h1>
+                                    <h2 class="pb-3 text-center text-4xl font-bold">
+                                        January
+                                    </h2>
+                                    <h2 class="pb-3 text-center text-4xl font-bold">
+                                        <span class="inline bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">2024</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex h-full w-screen flex-col">
+            <div class="flex h-full flex-col items-center bg-gradient-to-r from-zinc-400/15 via-zinc-950 to-violet-200/15 text-zinc-50">
+                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-12">
+                        <div class="relative grid grid-flow-row grid-cols-2 gap-4 p-4 lg:grid-cols-4 w-full">
+                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-t-zinc-500 border-l-zinc-500 border-b-zinc-500/25 border-r-zinc-500/25 p-4">
+                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    About me
+                                </h1>
+                                Text text text text
+                            </div>
+                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-t-zinc-500 border-r-zinc-500 border-b-zinc-500/25 border-l-zinc-500/25 p-4">
+                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    Contacts
+                                </h1>
+                                Text text text text
+                            </div>
+                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-t-violet-200 border-l-violet-200 border-b-violet-200/25 border-r-violet-200/25 p-4">
+                                <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    Skills
+                                </h1>
+                                Text text text text
+                            </div>
+                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-t-violet-200 border-r-violet-200 border-b-violet-200/25 border-l-violet-200/25 p-4">
+                                <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    Projects
+                                </h1>
+                                Text text text text
+                            </div>
+                        </div>
+                        <div class="relative grid grid-flow-row grid-cols-1 gap-4 p-4 pt-0 lg:grid-cols-2 w-full">
+                            <div class="h-full w-full border rounded-3xl rounded-t-none border-zinc-500 border-t-zinc-500/25 p-4">
+                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    Experience
+                                </h1>
+                                Text text text text
+                            </div>
+                            <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2 w-full">
+                                <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-b-violet-200 border-l-violet-200 border-t-violet-200/25 border-r-violet-200/25 p-4">
+                                    <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                        Articles
+                                    </h1>
+                                    Text text text text
+                                </div>
+                                <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-b-violet-200 border-r-violet-200 border-t-violet-200/25 border-l-violet-200/25 p-4">
+                                    <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                        Awards
+                                    </h1>
+                                    Text text text text
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </Layout>
+<style is:global>
+    :root::-webkit-scrollbar {
+        display: none !important;
+    }
+    :root::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+    }
+    :root::-webkit-scrollbar-track {
+        background-color: transparent !important;
+    }
+    .overflow-x-scroll::-webkit-scrollbar {
+        display: none !important;
+    }
+    .overflow-x-scroll::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+    }
+    .overflow-x-scroll::-webkit-scrollbar-track {
+        background-color: transparent !important;
+    }
+</style>
