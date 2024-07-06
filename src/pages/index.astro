@@ -2,9 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 import tailyUI from 'taily-ui'
 
-/*
-
-*/
+const month = new Date().getMonth()
+const day = new Date().getDate()
+const year = new Date().getFullYear()
+const monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
 ---
 
 <Layout
@@ -30,7 +44,7 @@ import tailyUI from 'taily-ui'
                     '6-years experienced, 3-startups launched Full-stack Web Developer, Android/IOS Developer, DevOps.',
                 button: {
                     title: 'To my projects',
-                    link: '#kpi'
+                    link: '#projects'
                 },
                 github: 'https://github.com/nikdelvin'
             })}
@@ -48,12 +62,12 @@ import tailyUI from 'taily-ui'
                 ],
                 button: {
                     title: 'Hire me today',
-                    link: '#features'
+                    link: '#footer'
                 }
             })}
         />
         <fragment
-            id="features"
+            id="features_1"
             set:html={tailyUI.FeatureCards({
                 title: "I've learned a lot",
                 color: 'default',
@@ -72,12 +86,12 @@ import tailyUI from 'taily-ui'
                 ],
                 button: {
                     title: 'Learn more',
-                    link: '/'
+                    link: '#features_2'
                 }
             })}
         />
         <fragment
-            id="features"
+            id="features_2"
             set:html={tailyUI.FeatureCards({
                 title: 'I made a deep dive into',
                 color: 'default',
@@ -95,13 +109,13 @@ import tailyUI from 'taily-ui'
                     "I've developed a messenger application for Bitrix24 CRM integration with WhatsApp in 8 months"
                 ],
                 button: {
-                    title: 'Learn more',
-                    link: '/'
+                    title: 'Look into abyss',
+                    link: '#features_3'
                 }
             })}
         />
         <fragment
-            id="features"
+            id="features_3"
             set:html={tailyUI.FeatureCards({
                 title: "And I'm still learning",
                 color: 'default',
@@ -119,13 +133,13 @@ import tailyUI from 'taily-ui'
                     'I working on Scientry - all-in-one data management & visualization solution for scientific researches'
                 ],
                 button: {
-                    title: 'Learn more',
-                    link: '/'
+                    title: 'Find a new way',
+                    link: '#features_4'
                 }
             })}
         />
         <fragment
-            id="features"
+            id="features_4"
             set:html={tailyUI.FeatureCards({
                 title: 'Also with the power',
                 color: 'default',
@@ -143,39 +157,27 @@ import tailyUI from 'taily-ui'
                     'I wrote an article about multi-physics modeling framework development for materials processing'
                 ],
                 button: {
-                    title: 'Learn more',
-                    link: '/'
+                    title: 'Do a research',
+                    link: '#skills'
                 }
             })}
         />
         <fragment
             id="projects"
             set:html={tailyUI.Projects({
-                title: 'My latest works',
+                title: 'Best latest works',
                 color: 'default',
-                projects: Array(5)
-                    .fill(true)
-                    .map(() => ({
-                        title: 'Of science',
-                        description: [
-                            { type: 'default', value: 'I can' },
-                            { type: 'primary', value: 'prove' },
-                            { type: 'default', value: 'that nothing is' },
-                            { type: 'primary', value: 'impossible' }
-                        ],
-                        options: [
-                            'I wrote an article about applying a modified genetic algorithm to solve the problem of',
-                            'I wrote an article about development of an information system for organizing the work of a production workshop with using of computer',
-                            'I wrote an article about multi-physics modeling framework development for materials'
-                        ],
-                        image: `https://picsum.photos/seed/${Math.random()}/1920/1080`
-                    }))
+                projects: [],
+                button: {
+                    title: 'To my experience',
+                    link: '#jobs'
+                }
             })}
         />
         <fragment
             id="skills"
             set:html={tailyUI.Skills({
-                title: 'My skills & inspiration',
+                title: 'Skills & inspiration',
                 color: 'default',
                 skills: [
                     { title: 'JS', icon: '/javascript.svg' },
@@ -210,118 +212,114 @@ import tailyUI from 'taily-ui'
                     'https://open.spotify.com/embed/track/43aktSsHN3Pgu0dzw3BS5W',
                     'https://open.spotify.com/embed/track/7Iiek3SL6PluRxj9IgbTC1',
                     'https://open.spotify.com/embed/track/7sA2SKTo1QbTSSYn5YvJC4'
+                ],
+                button: {
+                    title: 'Read my thoughts',
+                    link: 'https://dev.to/nikdelvin',
+                    newPage: true
+                }
+            })}
+        />
+        <fragment
+            id="jobs"
+            set:html={tailyUI.Jobs({
+                title: 'Work experience',
+                color: 'default',
+                jobs: [
+                    {
+                        from: ['15', 'June', '2022'],
+                        to: [String(day), monthNames[month], String(year)],
+                        title: 'BSO Real Estate Management',
+                        description: [
+                            { type: 'default', value: 'Team' },
+                            { type: 'primary', value: 'leader' },
+                            { type: 'default', value: '/' },
+                            { type: 'primary', value: 'Backend' },
+                            { type: 'default', value: 'developer /' },
+                            { type: 'primary', value: 'DevOps' }
+                        ],
+                        role: [
+                            'Management of a team of 5 frontend React developers to create a cross-platform mobile application and internal use CRM system',
+                            'Development of API gateway as a backend for company website, application and internal marketing, CRM, payment & CI/CD systems',
+                            'Building and setting up VPS architecture and CI/CD environment, dockerization for API, application, CRM and periphery microservices'
+                        ],
+                        button: {
+                            title: 'Visit website',
+                            link: 'https://bso.ae',
+                            newPage: true
+                        }
+                    },/*
+                    {
+                        from: ['9', 'January', '2021'],
+                        to: ['14', 'June', '2022'],
+                        title: 'WhatCRM by LifeTelecom',
+                        description: [
+                            { type: 'default', value: 'Frontend' },
+                            { type: 'primary', value: 'Next.JS' },
+                            { type: 'default', value: '/' },
+                            { type: 'primary', value: 'React' },
+                            { type: 'default', value: 'web developer' }
+                        ],
+                        role: [
+                            'Creator of API, Creator of API, Creator of API, Creator of API, Creator of API, Creator of API',
+                            'Team leader, Team leader, Team leader, Team leader, Team leader, Team leader, Team leader',
+                            'Just a cool guy, Just a cool guy, Just a cool guy, Just a cool guy, Just a cool guy'
+                        ],
+                        button: {
+                            title: 'Learn more',
+                            link: '/'
+                        }
+                    },
+                    {
+                        from: ['23', 'May', '2019'],
+                        to: ['8', 'January', '2021'],
+                        title: 'Unistroy Construction',
+                        description: [
+                            { type: 'default', value: 'Fullstack' },
+                            { type: 'primary', value: 'React' },
+                            { type: 'default', value: '/' },
+                            { type: 'primary', value: 'Python' },
+                            { type: 'default', value: 'web developer' }
+                        ],
+                        role: [
+                            'Creator of API, Creator of API, Creator of API, Creator of API, Creator of API, Creator of API',
+                            'Team leader, Team leader, Team leader, Team leader, Team leader, Team leader, Team leader',
+                            'Just a cool guy, Just a cool guy, Just a cool guy, Just a cool guy, Just a cool guy'
+                        ],
+                        button: {
+                            title: 'Learn more',
+                            link: '/'
+                        }
+                    }*/
                 ]
             })}
         />
-        <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full flex-col items-center bg-gradient-to-r from-zinc-400/15 via-zinc-950 to-violet-200/15 text-zinc-50">
-                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">
-                        <h1 class="bg-gradient-to-r from-zinc-400 to-violet-200 bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
-                            My experience
-                        </h1>
-                    </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2 w-full">
-                            <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
-                                <div
-                                    data-shadow
-                                    data-color="default"
-                                    class="card aspect-square !rotate-[10deg] !scale-[0.88]"
-                                >
-                                    <h2 class="absolute left-[16px] top-[12px] text-2xl font-semibold bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">
-                                        From
-                                    </h2>
-                                    <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
-                                        23
-                                    </h1>
-                                    <h2 class="pb-3 text-center text-4xl font-bold">
-                                        January
-                                    </h2>
-                                    <h2 class="pb-3 text-center text-4xl font-bold">
-                                        <span class="inline bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">2024</span>
-                                    </h2>
-                                </div>
-                                <div
-                                    data-shadow
-                                    data-color="default"
-                                    class="card aspect-square !rotate-[-10deg] !scale-[0.8] ml-3"
-                                >
-                                    <h2 class="absolute left-[16px] top-[12px] text-2xl font-semibold bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">
-                                        To
-                                    </h2>
-                                    <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
-                                        23
-                                    </h1>
-                                    <h2 class="pb-3 text-center text-4xl font-bold">
-                                        January
-                                    </h2>
-                                    <h2 class="pb-3 text-center text-4xl font-bold">
-                                        <span class="inline bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent">2024</span>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full flex-col items-center bg-gradient-to-r from-zinc-400/15 via-zinc-950 to-violet-200/15 text-zinc-50">
-                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-12">
-                        <div class="relative grid grid-flow-row grid-cols-2 gap-4 p-4 lg:grid-cols-4 w-full">
-                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-t-zinc-500 border-l-zinc-500 border-b-zinc-500/25 border-r-zinc-500/25 p-4">
-                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                    About me
-                                </h1>
-                                Text text text text
-                            </div>
-                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-t-zinc-500 border-r-zinc-500 border-b-zinc-500/25 border-l-zinc-500/25 p-4">
-                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                    Contacts
-                                </h1>
-                                Text text text text
-                            </div>
-                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-t-violet-200 border-l-violet-200 border-b-violet-200/25 border-r-violet-200/25 p-4">
-                                <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                    Skills
-                                </h1>
-                                Text text text text
-                            </div>
-                            <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-t-violet-200 border-r-violet-200 border-b-violet-200/25 border-l-violet-200/25 p-4">
-                                <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                    Projects
-                                </h1>
-                                Text text text text
-                            </div>
-                        </div>
-                        <div class="relative grid grid-flow-row grid-cols-1 gap-4 p-4 pt-0 lg:grid-cols-2 w-full">
-                            <div class="h-full w-full border rounded-3xl rounded-t-none border-zinc-500 border-t-zinc-500/25 p-4">
-                                <h1 class="bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                    Experience
-                                </h1>
-                                Text text text text
-                            </div>
-                            <div class="relative grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2 w-full">
-                                <div class="h-auto aspect-square w-full border rounded-3xl rounded-tl-none rounded-br-none border-b-violet-200 border-l-violet-200 border-t-violet-200/25 border-r-violet-200/25 p-4">
-                                    <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                        Articles
-                                    </h1>
-                                    Text text text text
-                                </div>
-                                <div class="h-auto aspect-square w-full border rounded-3xl rounded-tr-none rounded-bl-none border-b-violet-200 border-r-violet-200 border-t-violet-200/25 border-l-violet-200/25 p-4">
-                                    <h1 class="bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 bg-clip-text pb-4 text-3xl font-bold text-transparent">
-                                        Awards
-                                    </h1>
-                                    Text text text text
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <fragment
+            id="footer"
+            set:html={tailyUI.Footer({
+                color: 'default',
+                blocks: [
+                    { title: 'About', text: [] },
+                    {
+                        title: 'Contacts',
+                        text: [
+                            { type: 'default', value: 'Nikita Stadnik' },
+                            { type: 'default', value: '<br/><br/>' },
+                            { type: 'default', value: 'Email: ' },
+                            { type: 'primary', value: 'erter.live@gmail.com', link: 'mailto:erter.live@gmail.com' },
+                            { type: 'default', value: '<br/><br/>' },
+                            { type: 'default', value: 'Github: ' },
+                            { type: 'primary', value: '@nikdelvin', link: 'https://github.com/nikdelvin' }
+                        ]
+                    },
+                    { title: 'Projects', text: [] },
+                    { title: 'Skills', text: [] },
+                    { title: 'Experience', text: [] },
+                    { title: 'Articles', text: [] },
+                    { title: 'Awards', text: [] }
+                ]
+            })}
+        />
     </main>
 </Layout>
 <style is:global>
