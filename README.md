@@ -112,8 +112,8 @@
 [![eslint](https://img.shields.io/badge/eslint-black?style=for-the-badge&logo=eslint&color=%23202529&logoColor=%23b7b7ff)](https://eslint.org)
 [![prettier](https://img.shields.io/badge/prettier-black?style=for-the-badge&logo=prettier&color=%23202529)](https://prettier.io)
 ## 📊 My GitHub stats
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nikdelvin&theme=dark&hide_border=true" alt="nikdelvin" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nikdelvin&theme=dark&hide_border=true&background=202529" alt="nikdelvin" /></p>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=nikdelvin&show_icons=true&theme=dark&locale=en&include_all_commits=true&hide_border=true" alt="nikdelvin" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=nikdelvin&show_icons=true&theme=dark&locale=en&include_all_commits=true&hide_border=true&bg_color=202529&hide_title=true" alt="nikdelvin" /></p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikdelvin&show_icons=true&theme=dark&locale=en&layout=compact&hide_border=true" alt="nikdelvin" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikdelvin&show_icons=true&theme=dark&locale=en&layout=compact&hide_border=true&bg_color=202529&hide_title=true" alt="nikdelvin" /></p>
