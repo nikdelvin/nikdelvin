@@ -2,9 +2,10 @@
 interface Props {
     title: string
     description: string
+    color: string
 }
 
-const { title, description } = Astro.props
+const { title, description, color } = Astro.props
 ---
 
 <!doctype html>
@@ -25,7 +26,7 @@ const { title, description } = Astro.props
         <link
             rel="icon"
             type="image/svg+xml"
-            href="/favicon.svg"
+            href={`/favicon-${color}.svg?v=${Date.now()}`}
         />
         <meta
             name="generator"

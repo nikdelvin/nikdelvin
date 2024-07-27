@@ -1,6 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import tailyUI from 'taily-ui'
+import { favicon } from '../icons/favicon'
+import { languages } from '../icons/languages'
+import { frameworks } from '../icons/frameworks'
+import { runtime } from '../icons/runtime'
+import { libraries } from '../icons/libraries'
+import { deploy } from '../icons/deploy'
+import { standards } from '../icons/standards'
+import { software } from '../icons/software'
 
 const month = new Date().getMonth()
 const day = new Date().getDate()
@@ -19,18 +27,20 @@ const monthNames = [
     'November',
     'December'
 ]
+const colorTheme = 'default'
 ---
 
 <Layout
     title="Hi, Nik Delvin here!"
     description="6-years experienced, 3-startups launched Full-stack Web Developer, Android/IOS Developer, DevOps."
+    color={colorTheme}
 >
     <main class="select-none overflow-hidden">
         <fragment
             set:html={tailyUI.OpenSourcePromo({
-                logo: '/favicon.svg',
+                logo: favicon,
                 title: 'Nik Delvin',
-                color: 'default',
+                color: colorTheme,
                 text: [
                     { type: 'default', value: 'Launch' },
                     { type: 'primary', value: 'beautiful' },
@@ -53,7 +63,7 @@ const monthNames = [
             id="kpi"
             set:html={tailyUI.KPICards({
                 title: 'I can offer you',
-                color: 'default',
+                color: colorTheme,
                 cards: [
                     { title: '6', description1: 'years of', description2: 'experience' },
                     { title: '3', description1: 'launched', description2: 'projects' },
@@ -70,7 +80,7 @@ const monthNames = [
             id="features_1"
             set:html={tailyUI.FeatureCards({
                 title: "I've learned a lot",
-                color: 'default',
+                color: colorTheme,
                 reverse: false,
                 featureTitle: 'My journey',
                 featureDescription: [
@@ -94,9 +104,9 @@ const monthNames = [
             id="features_2"
             set:html={tailyUI.FeatureCards({
                 title: 'I made a deep dive into',
-                color: 'default',
+                color: colorTheme,
                 reverse: true,
-                featureTitle: 'Web Dev',
+                featureTitle: 'Web dev',
                 featureDescription: [
                     { type: 'default', value: 'From' },
                     { type: 'secondary', value: 'zero' },
@@ -118,7 +128,7 @@ const monthNames = [
             id="features_3"
             set:html={tailyUI.FeatureCards({
                 title: "And I'm still learning",
-                color: 'default',
+                color: colorTheme,
                 reverse: false,
                 featureTitle: 'How to help',
                 featureDescription: [
@@ -142,7 +152,7 @@ const monthNames = [
             id="features_4"
             set:html={tailyUI.FeatureCards({
                 title: 'Also with the power',
-                color: 'default',
+                color: colorTheme,
                 reverse: true,
                 featureTitle: 'Of science',
                 featureDescription: [
@@ -154,7 +164,7 @@ const monthNames = [
                 featureOptions: [
                     'I wrote an article about applying a modified genetic algorithm to solve the problem of 3d packaging',
                     'I wrote an article about development of an information system for organizing the work of a production workshop with using of computer vision',
-                    'I wrote an article about multi-physics modeling framework development for materials processing'
+                    'I helped with an article about a comprehensive simulation model of a city transport network'
                 ],
                 button: {
                     title: 'Do a research',
@@ -166,7 +176,7 @@ const monthNames = [
             id="projects"
             set:html={tailyUI.Projects({
                 title: 'Best latest works',
-                color: 'default',
+                color: colorTheme,
                 projects: [],
                 button: {
                     title: 'To my experience',
@@ -178,34 +188,150 @@ const monthNames = [
             id="skills"
             set:html={tailyUI.Skills({
                 title: 'Skills & inspiration',
-                color: 'default',
-                skills: [
-                    { title: 'JS', icon: '/javascript.svg' },
-                    { title: 'HTML5', icon: '/html-5.svg' },
-                    { title: 'CSS3', icon: '/css-3.svg' },
-                    { title: 'Python', icon: '/python.svg' },
-                    { title: 'Rust', icon: '/rust.svg' },
-                    { title: 'Astro JS', icon: '/astro-js.svg' },
-                    { title: 'Next JS', icon: '/next-js.svg' },
-                    { title: 'React', icon: '/react.svg' },
-                    { title: 'Three JS', icon: '/three-js.svg' },
-                    { title: 'Figma', icon: '/figma.svg' },
-                    { title: 'Node JS', icon: '/node-js.svg' },
-                    { title: 'Express', icon: '/express-js.svg' },
-                    { title: 'My SQL', icon: '/my-sql.svg' },
-                    { title: 'Git', icon: '/git.svg' },
-                    { title: 'Docker', icon: '/docker.svg' },
-                    { title: 'Tailwind CSS', icon: '/tailwind-css.svg' },
-                    { title: 'Bootsrap', icon: '/bootstrap.svg' },
-                    { title: 'Sass', icon: '/sass.svg' },
-                    { title: 'Android Studio', icon: '/android-studio.svg' },
-                    { title: 'Swift', icon: '/swift.svg' },
-                    { title: 'Django', icon: '/django.svg' },
-                    { title: 'Flask', icon: '/flask.svg' },
-                    { title: 'Cloud Platform', icon: '/google-cloud-platform.svg' },
-                    { title: 'Compute Engine', icon: '/google-compute-engine.svg' },
-                    { title: 'MATLAB', icon: '/matlab.svg' }
+                color: colorTheme,
+                rows: [
+                    {
+                        title: 'Languages / Frameworks / Runtime',
+                        skills: [
+                            { title: 'JavaScript', icon: languages.javascript },
+                            { title: 'TypeScript', icon: languages.typescript },
+                            { title: 'HTML 5', icon: languages.html5 },
+                            { title: 'CSS 3', icon: languages.css3 },
+                            { title: 'SASS', icon: languages.sass },
+                            { title: 'Markdown', icon: languages.markdown },
+                            { title: 'GraphQL', icon: languages.graphql },
+                            { title: 'Python', icon: languages.python },
+                            { title: 'Java', icon: languages.java },
+                            { title: 'Swift', icon: languages.swift },
+                            { title: 'React', icon: frameworks.react },
+                            { title: 'Preact', icon: frameworks.preact },
+                            { title: 'Solid JS', icon: frameworks.solid },
+                            { title: 'Astro JS', icon: frameworks.astro },
+                            { title: 'Next JS', icon: frameworks.nextjs },
+                            { title: 'Svetle', icon: frameworks.svelte },
+                            { title: 'Vue JS', icon: frameworks.vuejs },
+                            { title: 'Nuxt JS', icon: frameworks.nuxtjs },
+                            { title: 'Flutter', icon: frameworks.flutter },
+                            { title: 'Electron', icon: frameworks.electron },
+                            { title: 'Express', icon: frameworks.express },
+                            { title: 'Nest JS', icon: frameworks.nestjs },
+                            { title: 'Django', icon: frameworks.django },
+                            { title: 'Flask', icon: frameworks.flask },
+                            { title: 'Fast API', icon: frameworks.fastapi },
+                            { title: 'Node JS', icon: runtime.nodejs },
+                            { title: 'TS Node', icon: runtime.tsnode },
+                            { title: 'Deno', icon: runtime.deno },
+                            { title: 'Bun', icon: runtime.bun },
+                            { title: 'PyPy', icon: runtime.pypy }
+                        ]
+                    },
+                    {
+                        title: 'Open-source libraries & toolkits',
+                        skills: [
+                            { title: 'Bootstrap', icon: libraries.bootstrap },
+                            { title: 'Tailwind CSS', icon: libraries.tailwindcss },
+                            { title: 'JQuery', icon: libraries.jquery },
+                            { title: 'PostCSS', icon: libraries.postcss },
+                            { title: 'Styled Components', icon: libraries.styledcomponents },
+                            { title: 'React Router', icon: libraries.reactrouter },
+                            { title: 'React Hook Form', icon: libraries.reacthookform },
+                            { title: 'Formik', icon: libraries.formik },
+                            { title: 'Redux', icon: libraries.redux },
+                            { title: 'Recoil', icon: libraries.recoil },
+                            { title: 'Ant Design', icon: libraries.antdesign },
+                            { title: 'MUI', icon: libraries.mui },
+                            { title: 'Taily UI', icon: libraries.tailyui },
+                            { title: 'Next UI', icon: libraries.nextui },
+                            { title: 'Mantine', icon: libraries.mantine },
+                            { title: 'Framer Motion', icon: libraries.framermotion },
+                            { title: 'Three JS', icon: libraries.threejs },
+                            { title: 'D3 JS', icon: libraries.d3js },
+                            { title: 'Babylon JS', icon: libraries.babylonjs },
+                            { title: 'Pixi JS', icon: libraries.pixijs },
+                            { title: 'Webpack', icon: libraries.webpack },
+                            { title: 'Vite', icon: libraries.vite },
+                            { title: 'Chart JS', icon: libraries.chartjs },
+                            { title: 'Plotly', icon: libraries.plotly },
+                            { title: 'Pandas', icon: libraries.pandas },
+                            { title: 'Numpy', icon: libraries.numpy },
+                            { title: 'OpenCV', icon: libraries.opencv },
+                            { title: 'TensorFlow', icon: libraries.tensorflow },
+                            { title: 'PyTorch', icon: libraries.pytorch },
+                            { title: 'Scikit-Learn', icon: libraries.scikitlearn }
+                        ]
+                    },
+                    {
+                        title: 'Deploy / Testing / Data management',
+                        skills: [
+                            { title: 'Git', icon: deploy.git },
+                            { title: 'GitHub', icon: deploy.github },
+                            { title: 'Bitbucket', icon: deploy.bitbucket },
+                            { title: 'Docker', icon: deploy.docker },
+                            { title: 'Jenkins', icon: deploy.jenkins },
+                            { title: 'Strapi', icon: deploy.strapi },
+                            { title: 'MongoDB', icon: deploy.mongodb },
+                            { title: 'MySQL', icon: deploy.mysql },
+                            { title: 'SQLite', icon: deploy.sqlite },
+                            { title: 'PostgreSQL', icon: deploy.postgresql },
+                            { title: 'Jest', icon: deploy.jest },
+                            { title: 'Cypress', icon: deploy.cypress },
+                            { title: 'Selenium', icon: deploy.selenium },
+                            { title: 'Puppeteer', icon: deploy.puppeteer },
+                            { title: 'Postman', icon: deploy.postman },
+                            { title: 'NPM', icon: deploy.npm },
+                            { title: 'PNPM', icon: deploy.pnpm },
+                            { title: 'Yarn', icon: deploy.yarn },
+                            { title: 'Homebrew', icon: deploy.homebrew },
+                            { title: 'PyPI', icon: deploy.pypi },
+                            { title: 'Nginx', icon: deploy.nginx },
+                            { title: 'CPanel', icon: deploy.cpanel },
+                            { title: `Let's Encrypt`, icon: deploy.letsencrypt },
+                            { title: 'Grafana', icon: deploy.grafana },
+                            { title: 'Sentry', icon: deploy.sentry },
+                            { title: 'Google Cloud', icon: deploy.googlecloud },
+                            { title: 'Firebase', icon: deploy.firebase },
+                            { title: 'Netlify', icon: deploy.netlify },
+                            { title: 'Vercel', icon: deploy.vercel },
+                            { title: 'Heroku', icon: deploy.heroku }
+                        ]
+                    },
+                    {
+                        title: 'Web standards / IDE / Software',
+                        skills: [
+                            { title: 'ENV', icon: standards.env },
+                            { title: 'JWT', icon: standards.jwt },
+                            { title: 'WebRTC', icon: standards.webrtc },
+                            { title: 'PWA', icon: standards.pwa },
+                            { title: 'OWASP', icon: standards.owasp },
+                            { title: 'OpenAPI', icon: standards.openapi },
+                            { title: 'Swagger', icon: standards.swagger },
+                            { title: 'ElasticSearch', icon: standards.elasticsearch },
+                            { title: 'Eslint', icon: standards.eslint },
+                            { title: 'Prettier', icon: standards.prettier },
+                            { title: 'WebStorm', icon: software.webstorm },
+                            { title: 'XCode', icon: software.xcode },
+                            { title: 'Android Studio', icon: software.androidstudio },
+                            { title: 'PyCharm', icon: software.pycharm },
+                            { title: 'CodeSandbox', icon: software.codesandbox },
+                            { title: 'Figma', icon: software.figma },
+                            { title: 'Sketch', icon: software.sketch },
+                            { title: 'Behance', icon: software.behance },
+                            { title: 'Adobe Illustrator', icon: software.adobeillustrator },
+                            { title: 'Adobe Photoshop', icon: software.adobephotoshop },
+                            { title: 'Jira', icon: software.jira },
+                            { title: 'ClickUp', icon: software.clickup },
+                            { title: 'Miro', icon: software.miro },
+                            { title: 'Diagrams', icon: software.diagrams },
+                            { title: 'Slack', icon: software.slack },
+                            { title: 'Discord', icon: software.discord },
+                            { title: 'OpenAI', icon: software.openai },
+                            { title: 'Grammarly', icon: software.grammarly },
+                            { title: 'LeetCode', icon: software.leetcode },
+                            { title: 'CodeWars', icon: software.codewars }
+                        ]
+                    }
                 ],
+                musicTitle: 'Favorite music for development',
                 music: [
                     'https://open.spotify.com/embed/track/5TL04XPWpL2rTK7HLBWK6N',
                     'https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW',
@@ -224,7 +350,7 @@ const monthNames = [
             id="jobs"
             set:html={tailyUI.Jobs({
                 title: 'Work experience',
-                color: 'default',
+                color: colorTheme,
                 jobs: [
                     {
                         from: ['17', 'May', '2022'],
@@ -299,53 +425,83 @@ const monthNames = [
         <fragment
             id="footer"
             set:html={tailyUI.Footer({
-                color: 'default',
+                color: colorTheme,
                 blocks: [
-                    { title: 'About', text: [] },
+                    { 
+                        title: 'About', 
+                        text: [
+                            { type: 'default', value: `Hi, I'm` },
+                            { type: 'primary', value: 'Nikita Stadnik' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'default', value: `I'm a passionate and ambitious` },
+                            { type: 'primary', value: 'Fullstack Web Developer' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'default', value: 'My love is' },
+                            { type: 'primary', value: 'developing' },
+                            { type: 'default', value: 'cross-platform applications from zero to production' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'default', value: `I've mastered` },
+                            { type: 'primary', value: 'T-shaped skills' },
+                            { type: 'default', value: `that help me work solo on my own big projects` }
+                        ] 
+                    },
                     {
                         title: 'Contacts',
                         text: [
-                            { type: 'default', value: 'Nikita Stadnik' },
-                            { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Email:' },
-                            { type: 'primary', value: 'erter.live@gmail.com', link: 'mailto:erter.live@gmail.com' },
+                            { type: 'primary', value: 'erter.live@gmail.com', link: 'mailto:erter.live@gmail.com', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Github:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://github.com/nikdelvin' },
+                            { type: 'primary', value: '@nikdelvin', link: 'https://github.com/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'DEV Blog:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://dev.to/nikdelvin' },
+                            { type: 'primary', value: '@nikdelvin', link: 'https://dev.to/nikdelvin', newPage: true },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'default', value: 'Behance:' },
+                            { type: 'primary', value: '@nikdelvin', link: 'https://www.behance.net/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Telegram:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://t.me/nikdelvin' },
+                            { type: 'primary', value: '@nikdelvin', link: 'https://t.me/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'LinkedIn:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://www.linkedin.com/in/nikdelvin' }
+                            { type: 'primary', value: '@nikdelvin', link: 'https://www.linkedin.com/in/nikdelvin', newPage: true }
                         ]
                     },
                     {
                         title: 'Projects',
                         text: [
-                            { type: 'primary', value: 'TailyUI', link: 'https://tailyui.nikdelvin.dev' },
-                            { type: 'default', value: '<br/>Modern UI Library 100% built and animated with pure Tailwind CSS' },
+                            { type: 'primary', value: 'TailyUI', link: 'https://tailyui.nikdelvin.dev', newPage: true },
+                            {
+                                type: 'default',
+                                value: '<br/>Modern UI Library 100% built and animated with pure Tailwind CSS'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: 'Brodly', link: 'https://brodly.nikdelvin.dev' },
-                            { type: 'default', value: '<br/>High-secure and fully anonymous live streaming platform for everyone' },
+                            { type: 'primary', value: 'Brodly', link: 'https://brodly.nikdelvin.dev', newPage: true },
+                            {
+                                type: 'default',
+                                value: '<br/>High-secure and fully anonymous live streaming platform for everyone'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: 'Neuroly', link: 'https://neuroly.nikdelvin.dev' },
+                            { type: 'primary', value: 'Neuroly', link: 'https://neuroly.nikdelvin.dev', newPage: true },
                             { type: 'default', value: '<br/>STT and voice synthesis AI chatbot' }
                         ]
                     },
                     {
                         title: 'Coming soon',
                         text: [
-                            { type: 'primary', value: 'Scripty', link: 'https://scripty.nikdelvin.dev' },
-                            { type: 'default', value: '<br/>Practice-oriented educational platform to learn JavaScript & WebDev' },
+                            { type: 'primary', value: 'Scripty', link: 'https://scripty.nikdelvin.dev', newPage: true },
+                            {
+                                type: 'default',
+                                value: '<br/>Practice-oriented educational platform to learn JavaScript & WebDev'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: 'Feelicy', link: 'https://feelicy.nikdelvin.dev' },
-                            { type: 'default', value: '<br/>Mind mapping and goal planning service in game format of Garden Sim' },
+                            { type: 'primary', value: 'Feelicy', link: 'https://feelicy.nikdelvin.dev', newPage: true },
+                            {
+                                type: 'default',
+                                value: '<br/>Mind mapping and goal planning service in game format of Garden Sim'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: 'Scientry', link: 'https://scientry.nikdelvin.dev' },
+                            { type: 'primary', value: 'Scientry', link: 'https://scientry.nikdelvin.dev', newPage: true },
                             { type: 'default', value: '<br/>Data management & visualization tool' }
                         ]
                     },
@@ -354,27 +510,30 @@ const monthNames = [
                         text: [
                             {
                                 type: 'primary',
-                                value: `17.05.2022 - ${String(day).padStart(2, '0')}.${String(month + 1).padStart(2, '0')}.${String(year)}:`
+                                value: `17.05.22 - ${String(day).padStart(2, '0')}.${String(month + 1).padStart(2, '0')}.${String(year).slice(2)}:`
                             },
                             { type: 'default', value: 'BSO Real Estate Management.' },
                             { type: 'primary', value: 'Role:' },
-                            { type: 'default', value: 'Team leader / Backend developer / DevOps.' },
+                            { type: 'default', value: 'Team leader / DevOps / Backend developer.' },
                             { type: 'primary', value: 'Product:' },
-                            { type: 'default', value: 'Cross-platform mobile app and internal ERP system' },
+                            { type: 'default', value: 'Cross-platform mobile app & internal ERP system.' },
+                            { type: 'primary', value: 'Info', link: 'https://bso.ae', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: '19.01.2021 - 11.05.2022:' },
+                            { type: 'primary', value: '19.01.21 - 11.05.22:' },
                             { type: 'default', value: 'WhatCRM by LifeTelecom.' },
                             { type: 'primary', value: 'Role:' },
                             { type: 'default', value: 'Frontend Next.JS / React web developer.' },
                             { type: 'primary', value: 'Product:' },
-                            { type: 'default', value: 'Custom WhatsApp Web client as an integration for CRMs' },
+                            { type: 'default', value: 'Custom WhatsApp Web client as an integration for CRMs.' },
+                            { type: 'primary', value: 'Info', link: 'https://whatcrm.net/en', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: '25.05.2019 - 13.01.2021:' },
+                            { type: 'primary', value: '25.05.19 - 13.01.21:' },
                             { type: 'default', value: 'Unistroy Construction.' },
                             { type: 'primary', value: 'Role:' },
                             { type: 'default', value: 'Fullstack React / Python web developer.' },
                             { type: 'primary', value: 'Product:' },
-                            { type: 'default', value: 'Big-data service for analyzing counterparties affiliations' },
+                            { type: 'default', value: 'Big-data service for analyzing counterparties affiliations.' },
+                            { type: 'primary', value: 'Info', link: 'https://github.com/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Total time on development "battlefield":' },
                             {
@@ -389,8 +548,38 @@ const monthNames = [
                             { type: 'default', value: 'days' }
                         ]
                     },
-                    { title: 'Skills', text: [] },
-                    { title: 'Articles', text: [] }
+                    { 
+                        title: 'Skills', 
+                        text: [
+                            { type: 'primary', value: 'Languages:' },
+                            { type: 'default', value: 'JavaScript, TypeScript, HTML 5, CSS 3, Python, Java, Swift' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'primary', value: 'Frameworks:' },
+                            { type: 'default', value: 'React, Solid, Astro, Next, Svelte, Vue, Nuxt, Nest, Electron, Flask' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'primary', value: 'Libraries:' },
+                            { type: 'default', value: 'Bootstrap, Tailwind, Formik, Redux, Recoil, MUI, Framer, Three JS' },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'default', value: 'And more other deeply learned' },
+                            { type: 'primary', value: 'tools', link: '#skills' },
+                        ] 
+                    },
+                    { 
+                        title: 'Articles', 
+                        text: [
+                            { type: 'primary', value: '04.08.20:' },
+                            { type: 'default', value: 'Modified genetic algorithm as a new approach for solving the problem of 3d packaging.' },
+                            { type: 'primary', value: 'Read', link: 'https://ceur-ws.org/Vol-2667/paper21.pdf', newPage: true },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'primary', value: '24.12.21:' },
+                            { type: 'default', value: 'Development of an information system for organizing the work of a production workshop.' },
+                            { type: 'primary', value: 'Read', link: 'https://ieeexplore.ieee.org/document/9649154', newPage: true },
+                            { type: 'default', value: '<div style="padding:8px;"></div>' },
+                            { type: 'primary', value: '03.11.23:' },
+                            { type: 'default', value: 'Comprehensive simulation model of city transport network.' },
+                            { type: 'primary', value: 'Read', link: 'https://ieeexplore.ieee.org/document/10303830', newPage: true },
+                        ] 
+                    }
                 ]
             })}
         />
@@ -414,5 +603,15 @@ const monthNames = [
     }
     .overflow-x-scroll::-webkit-scrollbar-track {
         background-color: transparent !important;
+    }
+    @property --icon-start-color-primary {
+        syntax: '<color>';
+        inherits: false;
+        initial-value: #94a3b8;
+    }
+    @property --icon-end-color-primary {
+        syntax: '<color>';
+        inherits: false;
+        initial-value: #a1a1aa;
     }
 </style>
