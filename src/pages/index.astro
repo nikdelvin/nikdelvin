@@ -177,7 +177,128 @@ const colorTheme = 'default'
             set:html={tailyUI.Projects({
                 title: 'Best latest works',
                 color: colorTheme,
-                projects: [],
+                projects: [
+                    {
+                        image: '/projects/tailyui.jpg',
+                        title: 'Taily UI',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Explore project',
+                            link: 'https://tailyui.nikdelvin.dev',
+                            newPage: true
+                        }
+                    },
+                    {
+                        image: '/projects/brodly.jpg',
+                        title: 'Brodly',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Start broadcast',
+                            link: 'https://brodly.nikdelvin.dev',
+                            newPage: true
+                        }
+                    },
+                    {
+                        image: '/projects/scientry.jpg',
+                        title: 'Scientry',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Create new CMS',
+                            link: 'https://scientry.nikdelvin.dev',
+                            newPage: true
+                        }
+                    },
+                    {
+                        image: '/projects/feelicy.jpg',
+                        title: 'Feelicy',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Open your mind',
+                            link: 'https://feelicy.nikdelvin.dev',
+                            newPage: true
+                        }
+                    },
+                    {
+                        image: '/projects/neuroly.jpg',
+                        title: 'Neuroly',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Say "Hi!" to AI',
+                            link: 'https://neuroly.nikdelvin.dev',
+                            newPage: true
+                        }
+                    },
+                    {
+                        image: '/projects/scripty.jpg',
+                        title: 'Scripty',
+                        description: [
+                            { type: 'default', value: 'Beautiful' },
+                            { type: 'primary', value: 'UI Library' },
+                            { type: 'default', value: 'for fast & modern' },
+                            { type: 'primary', value: 'websites' },
+                        ],
+                        options: [
+                            'Contains useful pure Tailwind CSS components & 8 easy-to-use prepared layouts for landing pages',
+                            'Cross-framework library created for universal implementation on React, Next.JS, Astro.JS, Svelte, Vue.JS, Nuxt.JS, and vanilla Javascript',
+                            'Output HTML/CSS compression for faster and optimized builds & free open-source MIT license'
+                        ],
+                        button: {
+                            title: 'Learn morw',
+                            link: 'https://scripty.nikdelvin.dev',
+                            newPage: true
+                        }
+                    }
+                ],
                 button: {
                     title: 'To my experience',
                     link: '#jobs'
@@ -427,8 +548,8 @@ const colorTheme = 'default'
             set:html={tailyUI.Footer({
                 color: colorTheme,
                 blocks: [
-                    { 
-                        title: 'About', 
+                    {
+                        title: 'About',
                         text: [
                             { type: 'default', value: `Hi, I'm` },
                             { type: 'primary', value: 'Nikita Stadnik' },
@@ -443,28 +564,48 @@ const colorTheme = 'default'
                             { type: 'default', value: `I've mastered` },
                             { type: 'primary', value: 'T-shaped skills' },
                             { type: 'default', value: `that help me work solo on my own big projects` }
-                        ] 
+                        ]
                     },
                     {
                         title: 'Contacts',
                         text: [
                             { type: 'default', value: 'Email:' },
-                            { type: 'primary', value: 'erter.live@gmail.com', link: 'mailto:erter.live@gmail.com', newPage: true },
+                            {
+                                type: 'primary',
+                                value: 'erter.live@gmail.com',
+                                link: 'mailto:erter.live@gmail.com',
+                                newPage: true
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Github:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://github.com/nikdelvin', newPage: true },
+                            {
+                                type: 'primary',
+                                value: '@nikdelvin',
+                                link: 'https://github.com/nikdelvin',
+                                newPage: true
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'DEV Blog:' },
                             { type: 'primary', value: '@nikdelvin', link: 'https://dev.to/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Behance:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://www.behance.net/nikdelvin', newPage: true },
+                            {
+                                type: 'primary',
+                                value: '@nikdelvin',
+                                link: 'https://www.behance.net/nikdelvin',
+                                newPage: true
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'Telegram:' },
                             { type: 'primary', value: '@nikdelvin', link: 'https://t.me/nikdelvin', newPage: true },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'LinkedIn:' },
-                            { type: 'primary', value: '@nikdelvin', link: 'https://www.linkedin.com/in/nikdelvin', newPage: true }
+                            {
+                                type: 'primary',
+                                value: '@nikdelvin',
+                                link: 'https://www.linkedin.com/in/nikdelvin',
+                                newPage: true
+                            }
                         ]
                     },
                     {
@@ -501,7 +642,12 @@ const colorTheme = 'default'
                                 value: '<br/>Mind mapping and goal planning service in game format of Garden Sim'
                             },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
-                            { type: 'primary', value: 'Scientry', link: 'https://scientry.nikdelvin.dev', newPage: true },
+                            {
+                                type: 'primary',
+                                value: 'Scientry',
+                                link: 'https://scientry.nikdelvin.dev',
+                                newPage: true
+                            },
                             { type: 'default', value: '<br/>Data management & visualization tool' }
                         ]
                     },
@@ -548,37 +694,64 @@ const colorTheme = 'default'
                             { type: 'default', value: 'days' }
                         ]
                     },
-                    { 
-                        title: 'Skills', 
+                    {
+                        title: 'Skills',
                         text: [
                             { type: 'primary', value: 'Languages:' },
                             { type: 'default', value: 'JavaScript, TypeScript, HTML 5, CSS 3, Python, Java, Swift' },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'primary', value: 'Frameworks:' },
-                            { type: 'default', value: 'React, Solid, Astro, Next, Svelte, Vue, Nuxt, Nest, Electron, Flask' },
+                            {
+                                type: 'default',
+                                value: 'React, Solid, Astro, Next, Svelte, Vue, Nuxt, Nest, Electron, Flask'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'primary', value: 'Libraries:' },
-                            { type: 'default', value: 'Bootstrap, Tailwind, Formik, Redux, Recoil, MUI, Framer, Three JS' },
+                            {
+                                type: 'default',
+                                value: 'Bootstrap, Tailwind, Formik, Redux, Recoil, MUI, Framer, Three JS'
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'default', value: 'And more other deeply learned' },
-                            { type: 'primary', value: 'tools', link: '#skills' },
-                        ] 
+                            { type: 'primary', value: 'tools', link: '#skills' }
+                        ]
                     },
-                    { 
-                        title: 'Articles', 
+                    {
+                        title: 'Articles',
                         text: [
                             { type: 'primary', value: '04.08.20:' },
-                            { type: 'default', value: 'Modified genetic algorithm as a new approach for solving the problem of 3d packaging.' },
-                            { type: 'primary', value: 'Read', link: 'https://ceur-ws.org/Vol-2667/paper21.pdf', newPage: true },
+                            {
+                                type: 'default',
+                                value: 'Modified genetic algorithm as a new approach for solving the problem of 3d packaging.'
+                            },
+                            {
+                                type: 'primary',
+                                value: 'Read',
+                                link: 'https://ceur-ws.org/Vol-2667/paper21.pdf',
+                                newPage: true
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'primary', value: '24.12.21:' },
-                            { type: 'default', value: 'Development of an information system for organizing the work of a production workshop.' },
-                            { type: 'primary', value: 'Read', link: 'https://ieeexplore.ieee.org/document/9649154', newPage: true },
+                            {
+                                type: 'default',
+                                value: 'Development of an information system for organizing the work of a production workshop.'
+                            },
+                            {
+                                type: 'primary',
+                                value: 'Read',
+                                link: 'https://ieeexplore.ieee.org/document/9649154',
+                                newPage: true
+                            },
                             { type: 'default', value: '<div style="padding:8px;"></div>' },
                             { type: 'primary', value: '03.11.23:' },
                             { type: 'default', value: 'Comprehensive simulation model of city transport network.' },
-                            { type: 'primary', value: 'Read', link: 'https://ieeexplore.ieee.org/document/10303830', newPage: true },
-                        ] 
+                            {
+                                type: 'primary',
+                                value: 'Read',
+                                link: 'https://ieeexplore.ieee.org/document/10303830',
+                                newPage: true
+                            }
+                        ]
                     }
                 ]
             })}
