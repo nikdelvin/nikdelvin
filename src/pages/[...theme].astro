@@ -28,12 +28,13 @@ const monthNames = [
     'December'
 ]
 export async function getStaticPaths() {
-    return ['default', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'].map((theme) => ({
+    return [undefined, 'default', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'].map((theme) => ({
         params: { theme }
     }))
 }
 const { theme } = Astro.params
-const colorTheme = (theme as 'default') || 'primary' || 'secondary' || 'success' || 'warning' || 'error' || 'ghost'
+const colorTheme =
+    (theme as 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost') ?? 'default'
 ---
 
 <Layout
