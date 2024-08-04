@@ -27,7 +27,13 @@ const monthNames = [
     'November',
     'December'
 ]
-const colorTheme = 'default'
+export async function getStaticPaths() {
+    return ['default', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'].map((theme) => ({
+        params: { theme }
+    }))
+}
+const { theme } = Astro.params
+const colorTheme = (theme as 'default') || 'primary' || 'secondary' || 'success' || 'warning' || 'error' || 'ghost'
 ---
 
 <Layout
@@ -36,6 +42,11 @@ const colorTheme = 'default'
     color={colorTheme}
 >
     <main class="select-none overflow-hidden">
+        <fragment
+            set:html={tailyUI.Theme({
+                color: colorTheme
+            })}
+        />
         <fragment
             set:html={tailyUI.OpenSourcePromo({
                 logo: favicon,
