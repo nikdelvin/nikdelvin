@@ -1,9 +1,8 @@
-name: Deploy to GitHub Pages
+name: Update Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 permissions:
   contents: read
