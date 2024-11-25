@@ -17,6 +17,12 @@ const { title, description, color } = Astro.props
         <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-NDYRS0B1HH"></script>
         <script is:inline>
             window.dataLayer = window.dataLayer || []
+            window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'})
+            const gtagScript = document.getElementsByTagName('script')[0]
+            const gtmScript = document.createElement('script')
+            gtmScript.async = true
+            gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KCDNCQ9G'
+            gtagScript.parentNode.insertBefore(gtmScript,gtagScript)
             function gtag(){dataLayer.push(arguments)}
             gtag('consent', 'default', {
                 ad_storage: 'denied',
@@ -38,12 +44,6 @@ const { title, description, color } = Astro.props
                 personalization_storage: 'granted',
                 security_storage: 'granted'
             })
-            window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'})
-            const gtagScript = document.getElementsByTagName('script')[0]
-            const gtmScript = document.createElement('script')
-            gtmScript.async = true
-            gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KCDNCQ9G'
-            gtagScript.parentNode.insertBefore(gtmScript,gtagScript)
         </script>
         <meta charset="UTF-8" />
         <meta
