@@ -4,15 +4,15 @@
 
 -   🔭 I’m currently working on [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
 
--   🌱 I’m currently learning **Google Cloud Services, Firebase, ElectronJS**
+-   🌱 I’m currently learning **Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager**
 
--   👨‍💻 All of my projects are available at [https://nikdelvin.dev](https://nikdelvin.dev)
+-   👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
 
 -   📝 I regularly write articles on [https://dev.to/nikdelvin](https://dev.to/nikdelvin)
 
--   💬 Ask me about **React, Redux, NextJS, Astro, Strapi, TailwindCSS**
+-   💬 Ask me about **Astro.JS, Tailwind CSS, Svelte, React, NextJS, NPM Packages & Boilerplates**
 
--   📫 How to reach me **erter.live@gmail.com**
+-   📫 How to reach me **the@nikdelv.in**
 
 ## ⚡ My skills
 
