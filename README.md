@@ -1,18 +1,21 @@
 <h1 align="center">Hi 👋, I'm Nikita</h1>
-<h3 align="center">I'm a Fullstack Web Developer</h3> 
-<h4 align="center">My love is developing cross-platform web applications and SaaS solutions from zero to production</h4>
+<h3 align="center">🧑‍💻 I'm a passionate and ambitious Fullstack Web Developer</h3>
+<h3 align="center">🩶 My love is developing cross-platform applications from zero to production</h3>
+<h3 align="center">🧘 I've mastered T-shaped skills that help me work solo on my own big projects</h3>
 
--   🔭 I’m currently working on [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
+- 🔭 I’m currently working on [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
 
--   🌱 I’m currently learning **Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager**
+- 🌱 I’m currently learning: Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager
 
--   👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
+- 👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
 
--   📝 I regularly write articles on [https://dev.to/nikdelvin](https://dev.to/nikdelvin)
+- 📝 I regularly write articles on [DEV Community](https://dev.to/nikdelvin)
 
--   💬 Ask me about **Astro.JS, Tailwind CSS, Svelte, React, NextJS, NPM Packages & Boilerplates**
+- 💡 I frequently show inspiring ideas on [Behance](https://www.behance.net/nikdelvin)
 
--   📫 How to reach me **the@nikdelv.in**
+- 💬 Ask me about: Astro.JS, Tailwind CSS, Svelte, React, NextJS, NPM Packages & Boilerplates
+
+- 📫 How to reach me: the@nikdelv.in | [Telegram](https://t.me/nikdelvin)
 
 ## ⚡ My skills
 
