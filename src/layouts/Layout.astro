@@ -14,7 +14,11 @@ const { title, description, color } = Astro.props
     class="bg-zinc-950"
 >
     <head>
-        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-NDYRS0B1HH"></script>
+        <script
+            is:inline
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-NDYRS0B1HH"
+        ></script>
         <script is:inline>
             window.dataLayer = window.dataLayer || []
             gtag('consent', 'default', {
@@ -26,13 +30,15 @@ const { title, description, color } = Astro.props
                 personalization_storage: 'denied',
                 security_storage: 'denied'
             })
-            window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'})
+            window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
             const gtagScript = document.getElementsByTagName('script')[0]
             const gtmScript = document.createElement('script')
             gtmScript.async = true
             gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KCDNCQ9G'
-            gtagScript.parentNode.insertBefore(gtmScript,gtagScript)
-            function gtag(){dataLayer.push(arguments)}
+            gtagScript.parentNode.insertBefore(gtmScript, gtagScript)
+            function gtag() {
+                dataLayer.push(arguments)
+            }
             gtag('js', new Date())
             gtag('config', 'G-NDYRS0B1HH')
             gtag('consent', 'update', {
@@ -66,8 +72,14 @@ const { title, description, color } = Astro.props
         <title>{title}</title>
     </head>
     <body>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCDNCQ9G"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-KCDNCQ9G"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe></noscript
+        >
         <slot />
     </body>
 </html>
