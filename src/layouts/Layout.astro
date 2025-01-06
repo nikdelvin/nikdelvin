@@ -2,10 +2,14 @@
 interface Props {
     title: string
     description: string
+    keywords: string
+    url: string
+    imageUrl: string
+    brand: string
     color: string
 }
 
-const { title, description, color } = Astro.props
+const { title, description, keywords, url, imageUrl, brand, color } = Astro.props
 ---
 
 <!doctype html>
@@ -51,24 +55,32 @@ const { title, description, color } = Astro.props
                 security_storage: 'granted'
             })
         </script>
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content={description}
-        />
-        <meta
-            name="viewport"
-            content="width=device-width"
-        />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="author" content="Nikita Stadnik (the@nikdelv.in)"/>
+        <meta name="description" content={description}/>
+        <meta name="keywords" content={keywords}/>
+        <meta name="theme-color" content="#000000"/>
+        <meta property="og:title" content={title}/>
+        <meta property="og:description" content={description}/>
+        <meta property="og:url" content={url}/>
+        <meta property="og:image" content={imageUrl}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content={brand}/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={title}/>
+        <meta name="twitter:description" content={description}/>
+        <meta name="twitter:image" content={imageUrl}/>
+        <meta name="twitter:site" content="@nikdelvin"/>
+        <link rel="canonical" href={url}/>
         <link
             rel="icon"
             type="image/svg+xml"
             href={`/favicon-${color}.svg?v=${Date.now()}`}
         />
-        <meta
-            name="generator"
-            content={Astro.generator}
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href={`/favicon-${color}.svg?v=${Date.now()}`}/>
+        <meta name="generator" content={Astro.generator}/>
         <title>{title}</title>
     </head>
     <body>
