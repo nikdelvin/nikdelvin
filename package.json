@@ -7,7 +7,8 @@
         "build": "npm run prettier && npm run eslint && astro check && astro build",
         "preview": "npm run build && astro preview",
         "eslint": "eslint --ext .ts,.tsx,.astro src",
-        "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss"
+        "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss",
+        "upgrade": "npm outdated && npm update --save"
     },
     "dependencies": {
         "@astrojs/check": "^0.9.4",
