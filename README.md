@@ -140,7 +140,3 @@
 ## 📊 My GitHub stats
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nikdelvin&theme=dark&hide_border=true&background=202529" alt="nikdelvin" /></p>
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=nikdelvin&show_icons=true&theme=dark&locale=en&include_all_commits=true&hide_border=true&bg_color=202529&hide_title=true" alt="nikdelvin" /></p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikdelvin&show_icons=true&theme=dark&locale=en&layout=compact&hide_border=true&bg_color=202529&hide_title=true" alt="nikdelvin" /></p>
