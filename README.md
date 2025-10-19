@@ -1,6 +1,6 @@
 # Hi 👋, I'm Nikita
 
-🧑‍💻 I'm a passionate and ambitious Fullstack Web Developer
+🧑‍💻 I'm a passionate and ambitious **Senior Full-Stack Engineer**
 
 🩶 My love is developing cross-platform applications from zero to production
 
@@ -8,44 +8,73 @@
 
 🔭 I actively maintaining and continuously improving the following projects:
 
-- 🚀 [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
-    - Last Landing Page Update: [19.10.2025](https://github.com/nikdelvin/taily-ui-website/commit/99ea532ba345ac6243adaa05af16b695a2017151)
-    - Last Project Update: [19.10.2025](http://github.com/nikdelvin/taily-ui/commit/b2602f7a09e17dc630ba59951071e70ff11d89b8)
-- 📊 [Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 🌳 [Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 📺 [Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)
-    - Last Landing Page Update: [19.10.2025](https://github.com/nikdelvin/brodly-website/commit/d2044f074e315787f078239fc6f6e99345eb5deb)
-    - Last Project Update: [19.10.2025](https://github.com/nikdelvin/brodly/commit/ad3cd27379f4ae40929b5821bbca598a782f8d5a)
-- 🤖 [STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 🧩 [JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 💾 [One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 🔮 [Knowledge base for boosting LLM Code Assistants](https://github.com/nikdelvin/vibecoded)
-    - Last Landing Page Update: []()
-    - Last Project Update: []()
-- 👽 [Personal website with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)
-    - Last Landing Page Update: []()
+- 🚀 **[Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
+  
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-website?label=Landing%20update)](https://github.com/nikdelvin/taily-ui-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui?label=Project%20update)](https://github.com/nikdelvin/taily-ui/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/taily-ui?label=Total%20commits)
+
+- 📊 **[Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scientry-website?label=Landing%20update)](https://github.com/nikdelvin/scientry-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scientry?label=Project%20update)](https://github.com/nikdelvin/scientry/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scientry?label=Total%20commits)
+
+- 🌳 **[Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/feelicy-website?label=Landing%20update)](https://github.com/nikdelvin/feelicy-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/feelicy?label=Project%20update)](https://github.com/nikdelvin/feelicy/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/feelicy?label=Total%20commits)
+
+- 📺 **[Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/brodly-website?label=Landing%20update)](https://github.com/nikdelvin/brodly-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/brodly?label=Project%20update)](https://github.com/nikdelvin/brodly/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/brodly?label=Total%20commits)
+
+- 🤖 **[STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/neuroly-website?label=Landing%20update)](https://github.com/nikdelvin/neuroly-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/neuroly?label=Project%20update)](https://github.com/nikdelvin/neuroly/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/neuroly?label=Total%20commits)
+
+- 🧩 **[JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty-website?label=Landing%20update)](https://github.com/nikdelvin/scripty-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty?label=Project%20update)](https://github.com/nikdelvin/scripty/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scripty?label=Total%20commits)
+
+- 💾 **[One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit-website?label=Landing%20update)](https://github.com/nikdelvin/deploit-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit?label=Project%20update)](https://github.com/nikdelvin/deploit/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/deploit?label=Total%20commits)
+
+- 🔮 **[Knowledge base for boosting LLM Code Assistants](https://github.com/nikdelvin/vibecoded)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded-website?label=Landing%20update)](https://github.com/nikdelvin/vibecoded-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded?label=Project%20update)](https://github.com/nikdelvin/vibecoded/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/vibecoded?label=Total%20commits)
+
+- 👽 **[Personal website with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/hub-website?label=Landing%20update)](https://github.com/nikdelvin/hub-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/nikdelvin?label=Project%20update)](https://github.com/nikdelvin/nikdelvin/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/nikdelvin?label=Total%20commits)
+
+---
 
 🌱 I’m currently learning: Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager
 
-👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
+👨‍💻 All of my projects are available at **[https://nikdelv.in](https://nikdelv.in)**
 
-📝 I regularly write articles on [DEV Community](https://dev.to/nikdelvin)
+📝 I regularly write articles on **[DEV Community](https://dev.to/nikdelvin)**
 
-💡 I frequently show inspiring ideas on [Behance](https://www.behance.net/nikdelvin)
+💡 I frequently show inspiring ideas on **[Behance](https://www.behance.net/nikdelvin)**
 
 💬 Ask me about: Astro.JS, Svelte, React, NextJS, Node.JS, Fastify, Strapi, Kubernetes, Docker, Devtron, NPM Packages & Boilerplates
 
-📫 How to reach me: [the@nikdelv.in](mailto:the@nikdelv.in) | [Telegram](https://t.me/nikdelvin)
+📫 How to reach me: **[the@nikdelv.in](mailto:the@nikdelv.in)** | **[Telegram](https://t.me/nikdelvin)**
 
 ## ⚡ My skills
 
