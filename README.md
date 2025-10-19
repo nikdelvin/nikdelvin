@@ -6,27 +6,46 @@
 
 🧘 I've mastered T-shaped skills that help me work solo on my own big projects
 
-- 🔭 I actively maintaining and continuously improving the following projects:
-    - [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
-    - [Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)
-    - [Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)
-    - [Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)
-    - [STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)
-    - [JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)
-    - [One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)
-    - [Knowledge base for boosting LLM Code Assistants](https://github.com/nikdelvin/vibecoded)
+🔭 I actively maintaining and continuously improving the following projects:
 
-- 🌱 I’m currently learning: Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager
+- 🚀 [Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)
+    - Last Landing Page Update: [19.10.2025](https://github.com/nikdelvin/taily-ui-website/commit/99ea532ba345ac6243adaa05af16b695a2017151)
+    - Last Project Update: [19.10.2025](http://github.com/nikdelvin/taily-ui/commit/b2602f7a09e17dc630ba59951071e70ff11d89b8)
+- 📊 [Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 🌳 [Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 📺 [Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)
+    - Last Landing Page Update: [19.10.2025](https://github.com/nikdelvin/brodly-website/commit/d2044f074e315787f078239fc6f6e99345eb5deb)
+    - Last Project Update: [19.10.2025](https://github.com/nikdelvin/brodly/commit/ad3cd27379f4ae40929b5821bbca598a782f8d5a)
+- 🤖 [STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 🧩 [JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 💾 [One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 🔮 [Knowledge base for boosting LLM Code Assistants](https://github.com/nikdelvin/vibecoded)
+    - Last Landing Page Update: []()
+    - Last Project Update: []()
+- 👽 [Personal website with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)
+    - Last Landing Page Update: []()
 
-- 👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
+🌱 I’m currently learning: Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager
 
-- 📝 I regularly write articles on [DEV Community](https://dev.to/nikdelvin)
+👨‍💻 All of my projects are available at [https://nikdelv.in](https://nikdelv.in)
 
-- 💡 I frequently show inspiring ideas on [Behance](https://www.behance.net/nikdelvin)
+📝 I regularly write articles on [DEV Community](https://dev.to/nikdelvin)
 
-- 💬 Ask me about: Astro.JS, Svelte, React, NextJS, Node.JS, Fastify, Strapi, Kubernetes, Docker, Devtron, NPM Packages & Boilerplates
+💡 I frequently show inspiring ideas on [Behance](https://www.behance.net/nikdelvin)
 
-- 📫 How to reach me: [the@nikdelv.in](mailto:the@nikdelv.in) | [Telegram](https://t.me/nikdelvin)
+💬 Ask me about: Astro.JS, Svelte, React, NextJS, Node.JS, Fastify, Strapi, Kubernetes, Docker, Devtron, NPM Packages & Boilerplates
+
+📫 How to reach me: [the@nikdelv.in](mailto:the@nikdelv.in) | [Telegram](https://t.me/nikdelvin)
 
 ## ⚡ My skills
 

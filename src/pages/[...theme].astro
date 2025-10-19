@@ -642,7 +642,7 @@ const colorTheme = (theme as 'default' | 'primary' | 'secondary' | 'success' | '
                         ]
                     },
                     {
-                        title: 'Coming soon',
+                        title: 'Platforms',
                         text: [
                             { type: 'primary', value: 'Scripty', link: 'https://scripty.by.nikdelv.in', newPage: true },
                             {
@@ -800,7 +800,10 @@ const colorTheme = (theme as 'default' | 'primary' | 'secondary' | 'success' | '
         background-color: transparent !important;
     }
 </style>
-<script define:vars={{ day, month, year, monthNames }}>
+<script define:vars={{ monthNames }}>
+    const month = new Date().getMonth()
+    const day = new Date().getDate()
+    const year = new Date().getFullYear()
     document.querySelector('#job-0-to-0').textContent = String(day)
     document.querySelector('#job-0-to-1').textContent = monthNames[month]
     document.querySelector('#job-0-to-2').textContent = String(year)
