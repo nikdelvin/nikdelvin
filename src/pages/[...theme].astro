@@ -13,34 +13,20 @@ import { software } from '../icons/software'
 const month = new Date().getMonth()
 const day = new Date().getDate()
 const year = new Date().getFullYear()
-const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-]
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 export async function getStaticPaths() {
     return [undefined, 'default', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'].map((theme) => ({
         params: { theme }
     }))
 }
 const { theme } = Astro.params
-const colorTheme =
-    (theme as 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost') ?? 'default'
+const colorTheme = (theme as 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost') ?? 'default'
 ---
 
 <Layout
     title="Hi, Nik Delvin here!"
     description="6 years experienced, 3 startups launched Full-stack Web Developer, Android/IOS Developer, DevOps."
-    keywords="graphic design, web design, website design, website builder, web developer, web designer, webdesign, ecommerce website, web design company, website creator, website designer, responsive web design, web development company, best website design, web design software, web page design, build a website, web developer salary, design website, web design courses, how to design a website, web design inspiration, website layout, web designer salary, web application development"
+    keywords="graphic design, web design, website design, website builder, web developer, web designer, web design, e-commerce website, web design company, website creator, website designer, responsive web design, web development company, best website design, web design software, web page design, build a website, web developer salary, design website, web design courses, how to design a website, web design inspiration, website layout, web designer salary, web application development"
     url="https://nikdelv.in"
     imageUrl="https://nikdelv.in/projects/portfolio.jpg"
     brand="Nik Delvin"
@@ -61,8 +47,7 @@ const colorTheme =
                     },
                     { type: 'secondary', value: 'all-in-one developer' }
                 ],
-                description:
-                    '6 years experienced, 3 startups launched Full-stack Web Developer, Android/IOS Developer, DevOps.',
+                description: '6 years experienced, 3 startups launched Full-stack Web Developer, Android/IOS Developer, DevOps.',
                 button: {
                     title: 'To my projects',
                     link: '#projects'
@@ -307,7 +292,7 @@ const colorTheme =
                         image: '/projects/scripty.jpg',
                         title: 'Scripty',
                         description: [
-                            { type: 'default', value: ' JavaScript & WebDev education for' },
+                            { type: 'default', value: 'JavaScript & WebDev education for' },
                             { type: 'primary', value: 'everyone' }
                         ],
                         options: [
@@ -371,7 +356,7 @@ const colorTheme =
                         ]
                     },
                     {
-                        title: 'Open-source libraries & toolkits',
+                        title: 'Open-source libraries & tool-kits',
                         skills: [
                             { title: 'Bootstrap', icon: libraries.bootstrap },
                             { title: 'Tailwind CSS', icon: libraries.tailwindcss },
@@ -815,3 +800,12 @@ const colorTheme =
         background-color: transparent !important;
     }
 </style>
+<script define:vars={{ day, month, year, monthNames }}>
+    document.querySelector('#job-0-to-0').textContent = String(day)
+    document.querySelector('#job-0-to-1').textContent = monthNames[month]
+    document.querySelector('#job-0-to-2').textContent = String(year)
+    document.querySelector('#block-4-0').textContent =
+        `17.05.22 - ${String(day).padStart(2, '0')}.${String(month + 1).padStart(2, '0')}.${String(year).slice(2)}: `
+    document.querySelector('#block-4-25').textContent = `${Math.floor((Date.now() - Date.parse('25 May 2019 00:00:00 GMT')) / (1000 * 60 * 60 * 24) / 365)} `
+    document.querySelector('#block-4-27').textContent = `${Math.floor(((Date.now() - Date.parse('25 May 2019 00:00:00 GMT')) / (1000 * 60 * 60 * 24)) % 365)} `
+</script>
