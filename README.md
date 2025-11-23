@@ -9,9 +9,10 @@
 🔭 I actively maintaining and continuously improving the following projects:
 
 - 🚀 **[Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
-  
+
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/taily-ui-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/taily-ui/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-create?style=flat-square&label=Boilerplate%20update)](https://github.com/nikdelvin/taily-ui-create/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/taily-ui?style=flat-square&label=Total%20commits)
 
 - 📊 **[Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)**
