@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "site": "nikdelvin",
+        "site": "nikdelvin-portfolio",
         "source": ".",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
         "frameworksBackend": {
