@@ -45,6 +45,12 @@
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/scripty/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scripty?style=flat-square&label=Total%20commits)
 
+- 👽 **[Personal website Template with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/hub-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/hub-website/commit/HEAD)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/nikdelvin?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/nikdelvin/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/nikdelvin?style=flat-square&label=Total%20commits)
+
 - 💾 **[One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/deploit-website/commit/HEAD)
@@ -57,11 +63,15 @@
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/vibecoded/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/vibecoded?style=flat-square&label=Total%20commits)
 
-- 👽 **[Personal website with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)**
+- 🫧 **[Pixel-perfect recreation of Apple's iOS 26 Liquid Glass](https://github.com/nikdelvin/liquid-glass)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/hub-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/hub-website/commit/HEAD)
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/nikdelvin?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/nikdelvin/commit/HEAD)
-    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/nikdelvin?style=flat-square&label=Total%20commits)
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/liquid-glass?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/liquid-glass/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/liquid-glass?style=flat-square&label=Total%20commits)
+
+- 📚 **[Vault of the worst practices in software development](https://github.com/nikdelvin/antipatterns)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/antipatterns?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/antipatterns/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/antipatterns?style=flat-square&label=Total%20commits)
 
 ---
 
