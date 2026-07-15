@@ -8,6 +8,11 @@
 
 🔭 I actively maintaining and continuously improving the following projects:
 
+- 📟 **[Termweave — Tauri + OpenTUI desktop terminal app starter](https://github.com/nikdelvin/termweave)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/termweave?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/termweave/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/termweave?style=flat-square&label=Total%20commits)
+
 - 🚀 **[Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/taily-ui-website/commit/HEAD)
