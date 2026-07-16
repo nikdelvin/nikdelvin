@@ -6,6 +6,16 @@
 
 🧘 I've mastered T-shaped skills that help me work solo on my own big projects
 
+💼 All of my projects are available at **[https://nikdelv.in](https://nikdelv.in)**
+
+📝 I regularly write articles on **[DEV Community](https://dev.to/nikdelvin)**
+
+💡 I frequently show inspiring ideas on **[Behance](https://www.behance.net/nikdelvin)**
+
+📫 How to reach me: **[the@nikdelv.in](mailto:the@nikdelv.in)** | **[Telegram](https://t.me/nikdelvin)**
+
+## ✨ My open-source projects
+
 🔭 I actively maintaining and continuously improving the following projects:
 
 - 🫧 **[Pixel-perfect recreation of Apple's iOS 26 Liquid Glass](https://github.com/nikdelvin/liquid-glass)**
@@ -62,16 +72,6 @@
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/vibecoded/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/vibecoded?style=flat-square&label=Total%20commits)
-
----
-
-👨‍💻 All of my projects are available at **[https://nikdelv.in](https://nikdelv.in)**
-
-📝 I regularly write articles on **[DEV Community](https://dev.to/nikdelvin)**
-
-💡 I frequently show inspiring ideas on **[Behance](https://www.behance.net/nikdelvin)**
-
-📫 How to reach me: **[the@nikdelv.in](mailto:the@nikdelv.in)** | **[Telegram](https://t.me/nikdelvin)**
 
 ## ⚡ My skills
 
