@@ -18,37 +18,37 @@
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/termweave?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/termweave/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/termweave?style=flat-square&label=Total%20commits)
 
-- 🚀 **[Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
+- 🚀 **[TailyUI — Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/taily-ui/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/taily-ui?style=flat-square&label=Total%20commits)
 
-- 💾 **[One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
+- 💾 **[Deploit — One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/deploit/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/deploit?style=flat-square&label=Total%20commits)
 
-- 📊 **[Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)**
+- 📊 **[Scientry — Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scientry?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/scientry/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scientry?style=flat-square&label=Total%20commits)
 
-- 🌳 **[Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)**
+- 🌳 **[Feelicy — Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/feelicy?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/feelicy/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/feelicy?style=flat-square&label=Total%20commits)
 
-- 📺 **[Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)**
+- 📺 **[Brodly — Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/brodly?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/brodly/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/brodly?style=flat-square&label=Total%20commits)
 
-- 🤖 **[STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)**
+- 🤖 **[Neuroly — STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/neuroly?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/neuroly/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/neuroly?style=flat-square&label=Total%20commits)
 
-- 🧩 **[JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)**
+- 🧩 **[Scripty — JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/scripty/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scripty?style=flat-square&label=Total%20commits)
