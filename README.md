@@ -73,22 +73,13 @@
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/liquid-glass?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/liquid-glass/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/liquid-glass?style=flat-square&label=Total%20commits)
 
-- 📚 **[Vault of the worst practices in software development](https://github.com/nikdelvin/antipatterns)**
-
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/antipatterns?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/antipatterns/commit/HEAD)
-    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/antipatterns?style=flat-square&label=Total%20commits)
-
 ---
-
-🌱 I’m currently learning: Google Cloud Services, Firebase, Google Workspace, Google Analytics, Google Tag Manager
 
 👨‍💻 All of my projects are available at **[https://nikdelv.in](https://nikdelv.in)**
 
 📝 I regularly write articles on **[DEV Community](https://dev.to/nikdelvin)**
 
 💡 I frequently show inspiring ideas on **[Behance](https://www.behance.net/nikdelvin)**
-
-💬 Ask me about: Astro.JS, Svelte, React, NextJS, Node.JS, Fastify, Strapi, Kubernetes, Docker, Devtron, NPM Packages & Boilerplates
 
 📫 How to reach me: **[the@nikdelv.in](mailto:the@nikdelv.in)** | **[Telegram](https://t.me/nikdelvin)**
 
