@@ -8,6 +8,11 @@
 
 🔭 I actively maintaining and continuously improving the following projects:
 
+- 🫧 **[Pixel-perfect recreation of Apple's iOS 26 Liquid Glass](https://github.com/nikdelvin/liquid-glass)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/liquid-glass?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/liquid-glass/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/liquid-glass?style=flat-square&label=Total%20commits)
+
 - 📟 **[Termweave — Tauri + OpenTUI desktop terminal app builder](https://github.com/nikdelvin/termweave)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/termweave?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/termweave/commit/HEAD)
@@ -15,63 +20,48 @@
 
 - 🚀 **[Modern UI Library for Tailwind CSS](https://github.com/nikdelvin/taily-ui)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/taily-ui-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/taily-ui/commit/HEAD)
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/taily-ui-create?style=flat-square&label=Boilerplate%20update)](https://github.com/nikdelvin/taily-ui-create/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/taily-ui?style=flat-square&label=Total%20commits)
+
+- 💾 **[One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
+
+    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/deploit/commit/HEAD)
+    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/deploit?style=flat-square&label=Total%20commits)
 
 - 📊 **[Self-hosted CMS solution for scientists](https://github.com/nikdelvin/scientry)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scientry-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/scientry-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scientry?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/scientry/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scientry?style=flat-square&label=Total%20commits)
 
 - 🌳 **[Productivity platform in format of Farm Simulator](https://github.com/nikdelvin/feelicy)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/feelicy-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/feelicy-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/feelicy?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/feelicy/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/feelicy?style=flat-square&label=Total%20commits)
 
 - 📺 **[Anonymous streaming platform for everyone](https://github.com/nikdelvin/brodly)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/brodly-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/brodly-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/brodly?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/brodly/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/brodly?style=flat-square&label=Total%20commits)
 
 - 🤖 **[STT & voice synthesis powered AI chatbot](https://github.com/nikdelvin/neuroly)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/neuroly-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/neuroly-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/neuroly?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/neuroly/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/neuroly?style=flat-square&label=Total%20commits)
 
 - 🧩 **[JavaScript & WebDev education platform](https://github.com/nikdelvin/scripty)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/scripty-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/scripty?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/scripty/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/scripty?style=flat-square&label=Total%20commits)
 
 - 👽 **[Personal website Template with Projects Portfolio](https://github.com/nikdelvin/nikdelvin)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/hub-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/hub-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/nikdelvin?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/nikdelvin/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/nikdelvin?style=flat-square&label=Total%20commits)
 
-- 💾 **[One-Click Deployments solution for busy DevOps](https://github.com/nikdelvin/deploit)**
-
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/deploit-website/commit/HEAD)
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/deploit?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/deploit/commit/HEAD)
-    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/deploit?style=flat-square&label=Total%20commits)
-
 - 🔮 **[Knowledge base for boosting LLM Code Assistants](https://github.com/nikdelvin/vibecoded)**
 
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded-website?style=flat-square&label=Landing%20update)](https://github.com/nikdelvin/vibecoded-website/commit/HEAD)
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/vibecoded?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/vibecoded/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/vibecoded?style=flat-square&label=Total%20commits)
-
-- 🫧 **[Pixel-perfect recreation of Apple's iOS 26 Liquid Glass](https://github.com/nikdelvin/liquid-glass)**
-
-    [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/liquid-glass?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/liquid-glass/commit/HEAD)
-    ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/liquid-glass?style=flat-square&label=Total%20commits)
 
 ---
 
