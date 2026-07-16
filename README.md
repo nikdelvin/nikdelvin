@@ -8,7 +8,7 @@
 
 🔭 I actively maintaining and continuously improving the following projects:
 
-- 📟 **[Termweave — Tauri + OpenTUI desktop terminal app starter](https://github.com/nikdelvin/termweave)**
+- 📟 **[Termweave — Tauri + OpenTUI desktop terminal app builder](https://github.com/nikdelvin/termweave)**
 
     [![last-commit](https://img.shields.io/github/last-commit/nikdelvin/termweave?style=flat-square&label=Project%20update)](https://github.com/nikdelvin/termweave/commit/HEAD)
     ![commit-activity](https://img.shields.io/github/commit-activity/t/nikdelvin/termweave?style=flat-square&label=Total%20commits)
